@@ -1,4 +1,6 @@
 # Publish the static site in surplus-outlet/ to GitHub Pages on every push to main.
+# Two jobs (build -> deploy), matching GitHub's official Pages starter workflow:
+# the deploy job only starts after the uploaded artifact is fully registered.
 name: Deploy to GitHub Pages
 
 on:
@@ -16,16 +18,21 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
           path: surplus-outlet
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v5
