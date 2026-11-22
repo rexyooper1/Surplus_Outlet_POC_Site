@@ -44,17 +44,19 @@
     btn.setAttribute('aria-controls', 'primary-nav');
     btn.setAttribute('aria-expanded', 'false');
     btn.setAttribute('aria-label', 'Open menu');
-    btn.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">menu</span>';
+    // Inline SVG (not the icon font) so the menu button always renders.
+    var ICON_MENU = '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+    var ICON_CLOSE = '<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+    btn.innerHTML = ICON_MENU;
     cluster.appendChild(btn);
 
     var backdrop = null;
-    var icon = btn.firstElementChild;
 
     function setOpen(open) {
       header.classList.toggle('so-nav-open', open);
       btn.setAttribute('aria-expanded', String(open));
       btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-      icon.textContent = open ? 'close' : 'menu';
+      btn.innerHTML = open ? ICON_CLOSE : ICON_MENU;
       if (open && !backdrop) {
         backdrop = document.createElement('div');
         backdrop.className = 'so-menu-backdrop';
@@ -196,6 +198,32 @@
     });
   }
 
+  /* ---------- Icon font fallback ----------
+     Icons are a font: if it can't load (e.g. iOS Lockdown Mode), each icon
+     renders as its name ("arrow_forward"). Detect that and hide them. */
+  function initIconFontCheck() {
+    var done = false;
+    function check() {
+      if (done) return;
+      done = true;
+      // A working ligature renders "menu" as one ~24px glyph;
+      // without the font it is a whole word (~50px+).
+      var probe = document.createElement('span');
+      probe.className = 'material-symbols-outlined';
+      probe.textContent = 'menu';
+      probe.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;font-size:24px';
+      document.body.appendChild(probe);
+      var w = probe.getBoundingClientRect().width;
+      probe.remove();
+      if (w > 36) document.documentElement.classList.add('so-no-icon-font');
+    }
+    if (document.fonts && document.fonts.load) {
+      document.fonts.load('24px "Material Symbols Outlined"', 'menu').then(check, check);
+    }
+    setTimeout(check, 8000); // fallback if loading never settles
+  }
+
+  initIconFontCheck();
   initLogoFallback();
   initMobileNav();
   initContactForm();

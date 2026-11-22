@@ -1,0 +1,52 @@
+/* Self-hosted fonts (from Google Fonts) so the site doesn't depend on
+   fonts.googleapis.com, which some phones/content blockers/Private Relay block.
+
+   - Outfit and Plus Jakarta Sans: variable fonts, Latin subset.
+   - Material Symbols Outlined: subset to ONLY the icons this site uses.
+     If you add a new icon name in the HTML, re-download the subset with that
+     name added (Google Fonts css2 API, `icon_names=` parameter), or it will
+     show as plain text. */
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(outfit-latin.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(plus-jakarta-sans-latin.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: block;
+  src: url(material-symbols-outlined-subset.woff2) format('woff2');
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* If the icon font can't load at all (e.g. iOS Lockdown Mode), site.js adds
+   this class so icon names don't show up as stray words. */
+.so-no-icon-font .material-symbols-outlined { display: none !important; }
