@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#41484c", "primary": "#032517", "on-surface-variant": "#424843", "surface-bright": "#fbf9f4", "surface-container": "#f0eee9", "border-subtle": "#E2DDD5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#2a1800", "surface-container-high": "#eae8e3", "secondary-container": "#dbe0e6", "primary-container": "#1b3b2b", "on-secondary-fixed": "#161c20", "inverse-primary": "#abcfb8", "on-tertiary-fixed-variant": "#643f00", "primary-fixed": "#c7ebd4", "on-primary": "#ffffff", "outline": "#727973", "slate-surface": "#161B1E", "inverse-surface": "#30312e", "surface-container-low": "#f5f3ee", "tertiary": "#301c00", "on-secondary": "#ffffff", "surface": "#fbf9f4", "secondary-fixed-dim": "#c1c7cc", "surface-container-highest": "#e4e2dd", "on-surface": "#1b1c19", "surface-variant": "#e4e2dd", "timber-bark": "#5C4328", "trail-gold-hover": "#A86F1E", "tertiary-fixed": "#ffddb5", "canvas-paper": "#FAF8F5", "surface-dim": "#dbdad5", "on-error": "#ffffff", "on-error-container": "#93000a", "background": "#fbf9f4", "on-tertiary": "#ffffff", "tertiary-container": "#4c2f00", "error-container": "#ffdad6", "inverse-on-surface": "#f2f1ec", "outline-variant": "#c1c8c2", "on-primary-container": "#83a590", "on-background": "#1b1c19", "on-tertiary-container": "#d19133", "error": "#ba1a1a", "primary-fixed-dim": "#abcfb8", "on-primary-fixed-variant": "#2d4d3c", "tertiary-fixed-dim": "#ffb957", "secondary-fixed": "#dee3e8", "keweenaw-ice-blue": "#B9D2DF", "pine-deep": "#0E2419", "secondary": "#595f64", "surface-tint": "#456553", "on-primary-fixed": "#002113", "on-secondary-container": "#5d6368" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin": "2.5rem", "margin-mobile": "1.25rem", "space-2xl": "4rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem" }, "fontFamily": { "body-sm": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-lg": [ "Outfit" ], "headline-md": [ "Outfit" ], "label-lg": [ "Outfit" ], "display-lg-mobile": [ "Outfit" ], "headline-lg-mobile": [ "Outfit" ], "body-md": [ "Plus Jakarta Sans" ], "label-md": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Outfit" ], "headline-lg": [ "Outfit" ], "headline-sm": [ "Outfit" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "display-lg": [ "48px", { "lineHeight": "56px", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "display-lg-mobile": [ "34px", { "lineHeight": "42px", "fontWeight": "700" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ] } } } };</script><link href="site.css" rel="stylesheet"/>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-canvas-paper/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-1 px-margin-mobile md:px-margin text-label-sm font-label-sm tracking-wider uppercase flex justify-between items-center"><div class="flex items-center gap-space-sm"><span>Keweenaw Peninsula Outfitter • Houghton, Michigan</span></div><div class="flex items-center gap-space-lg"><a class="hover:text-primary-fixed transition-colors" href="tel:19064822550">Call Us: 1 (906) 482 - 2550</a><span class="hidden md:inline-block text-outline-variant">|</span><span class="hidden md:flex items-center gap-space-xs text-on-tertiary-container"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim inline-block animate-pulse"></span>Open Today 9am - 8pm</span></div></div><div class="h-20 w-full px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><a aria-label="Surplus Outlet home" class="flex items-center gap-space-md shrink-0" href="index.html"><img alt="Surplus Outlet" class="h-16 w-auto object-contain shrink-0" height="64" src="logo.jpg" width="128"/><span class="so-tagline"><span>Take It</span> <span class="so-tagline__accent">Outside</span></span></a><div class="hidden lg:flex items-center flex-1 max-w-md mx-space-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary shadow-[0_1px_4px_rgba(0,0,0,0.04)]" placeholder="Search rugged apparel, footwear, outdoor gear..." type="search"/></div></div><div class="flex items-center gap-space-md shrink-0"><a class="hidden xl:flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors" data-path="contact" href="contact.html"><span class="material-symbols-outlined text-primary text-[18px]">store</span><span class="font-label-md text-label-md">Houghton Store</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full px-margin-mobile md:px-margin pb-3"><nav aria-label="Primary" class="flex items-center gap-space-lg overflow-x-auto whitespace-nowrap" id="primary-nav" data-active-classes="bg-primary-container text-on-primary font-headline-sm rounded-lg"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="home" href="index.html">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="brands" href="brands.html">Brands We Carry</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="apparel-footwear" href="apparel.html">Apparel &amp; Footwear</a><a aria-current="page" class="font-label-lg text-label-lg transition-colors py-1 px-2 rounded-lg bg-primary-container text-on-primary" data-path="outdoor-gear" href="gear.html">Outdoor Gear</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="about" href="about.html">About Us</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="contact" href="contact.html">Contact &amp; Hours</a></nav></div></header><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<!-- Atmospheric Hero / Department Header -->
+<section class="relative w-full bg-slate-surface text-canvas-paper overflow-hidden px-margin-mobile md:px-margin py-space-2xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary/40 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 w-80 h-80 rounded-full bg-tertiary-container/30 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl relative z-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="max-w-3xl flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-keweenaw-ice-blue">
+<span class="material-symbols-outlined text-[18px]">navigation</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Field Division • 47.1211° N, 88.5694° W</span>
+</div>
+<h1 class="font-display-lg text-display-lg tracking-tight uppercase text-canvas-paper">
+            Outdoor &amp; Backcountry Gear
+          </h1>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim max-w-2xl leading-relaxed">
+            From Isle Royale backcountry trailheads to Keweenaw ridge snowshoe traverses, outfitting cold-climate exploration with tested, field-grade hardware.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row md:flex-col items-start md:items-end gap-space-xs text-right">
+<div class="flex items-center gap-2 bg-pine-deep px-4 py-2 rounded-lg text-keweenaw-ice-blue shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="font-label-md text-label-md">Houghton Warehouse Stocked</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Same-day curb pickup ready in 60 mins</span>
+</div>
+</div>
+<!-- Quick Category Pills -->
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<a class="bg-surface-container-high/15 hover:bg-surface-container-high/30 text-canvas-paper font-label-md text-label-md px-3.5 py-2 rounded-lg transition-colors flex items-center gap-1.5" href="#winter-expedition">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">ac_unit</span>
+          Winter Trekking &amp; Snowshoes
+        </a>
+<a class="bg-surface-container-high/15 hover:bg-surface-container-high/30 text-canvas-paper font-label-md text-label-md px-3.5 py-2 rounded-lg transition-colors flex items-center gap-1.5" href="#sleeping-shelter">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">bed</span>
+          Sleeping Bags &amp; Pads (-20°F Rated)
+        </a>
+<a class="bg-surface-container-high/15 hover:bg-surface-container-high/30 text-canvas-paper font-label-md text-label-md px-3.5 py-2 rounded-lg transition-colors flex items-center gap-1.5" href="#camp-kitchen">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">water_drop</span>
+          Camp Kitchen &amp; Hydration
+        </a>
+<a class="bg-surface-container-high/15 hover:bg-surface-container-high/30 text-canvas-paper font-label-md text-label-md px-3.5 py-2 rounded-lg transition-colors flex items-center gap-1.5" href="#pack-carry">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">backpack</span>
+          Packs &amp; Dry Storage
+        </a>
+<a class="bg-surface-container-high/15 hover:bg-surface-container-high/30 text-canvas-paper font-label-md text-label-md px-3.5 py-2 rounded-lg transition-colors flex items-center gap-1.5" href="#hardware-lighting">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">flashlight_on</span>
+          Knives, Tools &amp; Illumination
+        </a>
+<a class="bg-surface-container-high/15 hover:bg-surface-container-high/30 text-canvas-paper font-label-md text-label-md px-3.5 py-2 rounded-lg transition-colors flex items-center gap-1.5" href="#field-wisdom">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">explore</span>
+          Trail Conditions &amp; Ferry Prep
+        </a>
+</div>
+</div>
+</section>
+<!-- Department Quick Navigation Mosaic -->
+<section class="w-full px-margin-mobile md:px-margin -mt-8 relative z-20">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-col items-center text-center gap-2 group hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[24px]">camping</span>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Tents &amp; Tarps</span>
+<span class="font-body-sm text-body-sm text-secondary">4-Season &amp; Ultralight</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-col items-center text-center gap-2 group hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[24px]">bed</span>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Down Bags</span>
+<span class="font-body-sm text-body-sm text-secondary">R-Value &gt; 5 Insulated</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-col items-center text-center gap-2 group hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[24px]">downhill_skiing</span>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Snowshoes</span>
+<span class="font-body-sm text-body-sm text-secondary">Aggressive Crampons</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-col items-center text-center gap-2 group hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[24px]">skillet</span>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Cook Systems</span>
+<span class="font-body-sm text-body-sm text-secondary">Sawyer • Katadyn</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-col items-center text-center gap-2 group hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[24px]">hardware</span>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Blades &amp; Tools</span>
+<span class="font-body-sm text-body-sm text-secondary">Morakniv • Leatherman</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-md flex flex-col items-center text-center gap-2 group hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Navigation</span>
+<span class="font-body-sm text-body-sm text-secondary">Topo • Garmin • First Aid</span>
+</div>
+</div>
+</section>
+<!-- Collection 1: Winter Expedition & Snow Gear -->
+<section class="w-full px-margin-mobile md:px-margin py-space-2xl" id="winter-expedition">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-trail-gold-hover">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Sub-Zero Rated Field Kit</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-primary">
+            Winter Expedition &amp; Snow Gear
+          </h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl">
+            Engineered for Keweenaw lake-effect dumps, Mount Bohemia off-piste ascents, and backcountry cross-country routes.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-secondary">Current Lake Effect Inflow:</span>
+<span class="bg-surface-container-highest px-2.5 py-1 rounded font-label-md text-label-md text-primary font-bold">248" Season Total</span>
+</div>
+</div>
+<!-- Feature Split Bento -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Main Feature Highlight Card -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex flex-col gap-space-md z-10">
+<div class="flex items-center justify-between">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded">Expedition Baseline</span>
+<span class="font-label-sm text-label-sm text-trail-gold-hover uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> Tested on Porcupine Ridge
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase">
+              MSR Lightning Ascent 30" Snowshoes + Pivot Bindings
+            </h3>
+<p class="font-body-md text-body-md text-secondary max-w-xl">
+              Equipped with 360° traction frames, steel crampons for sheer crust, and Ergo Televator heel lifts that minimize calf exhaustion on steep Copper Harbor climbs.
+            </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="bg-surface-container-lowest px-3 py-1 rounded text-primary font-label-sm text-label-sm uppercase font-semibold">T-Bar Aggressive Grip</span>
+<span class="bg-surface-container-lowest px-3 py-1 rounded text-primary font-label-sm text-label-sm uppercase font-semibold">Max Load: 280 lbs</span>
+<span class="bg-surface-container-lowest px-3 py-1 rounded text-primary font-label-sm text-label-sm uppercase font-semibold">Made in North America</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md z-10">
+<div>
+<span class="font-body-sm text-body-sm text-secondary line-through">$379.95</span>
+<div class="font-headline-lg text-headline-lg text-primary leading-none">$329.99</div>
+<span class="font-label-sm text-label-sm text-emerald-800 font-bold">14 In Stock in Houghton</span>
+</div>
+<button class="bg-primary hover:bg-pine-deep text-on-primary font-label-lg text-label-lg px-6 py-3 rounded-lg uppercase tracking-wider transition-all shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span> Reserve In Store
+            </button>
+</div>
+<div class="absolute right-0 bottom-0 opacity-15 pointer-events-none translate-x-12 translate-y-12">
+<span class="material-symbols-outlined text-[260px] text-primary">snowshoeing</span>
+</div>
+</div>
+<!-- 3 Product Cards in Stack -->
+<div id="sleeping-shelter" class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-space-md">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow flex items-center gap-4">
+<div class="w-24 h-24 rounded-lg bg-surface-container-high shrink-0 overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Rugged arctic mummy sleeping bag rolled out on pine timber in cold snowy woods with thick high-loft down baffles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASi0LmP9Ro9a9xrc0PicpZIRwRf6DIRHvfTe-RIY1Tq8Q7E8Z2h3Q3e_4Hkd8eOVe2XP-sRm5QSm6EOuVamkSV8fJ7B3l2g3P_Y98EKNzKrtgVzPHu36sQCvtlyhnbTILWIieAB_m2J6J6fLRgVvd77KowTsLexJWJQ1992Hqcb4K4sFR-OXy-lSKkrPQ3gbvd4t0rJLbiG2-QUoWG2yQLWEwnrAdJoeFlVznhRjQ"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Marmot Backcountry</span>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed px-2 py-0.5 rounded">-20°F Down</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate uppercase mt-0.5">Never Summer -20°F Mummy</h4>
+<span class="font-body-sm text-body-sm text-secondary line-clamp-1">850-Fill Power Hydrophobic goose down filling.</span>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$389.00</span>
+<button class="text-primary hover:text-trail-gold-hover font-label-md text-label-md flex items-center gap-0.5">
+                  Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow flex items-center gap-4">
+<div class="w-24 h-24 rounded-lg bg-surface-container-high shrink-0 overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Black Diamond carbon fiber trekking poles standing upright against snow bank with heavy winter powder baskets attached" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ0LECoAe4RVCPBi7MDWXYOVbnPcK9_U2axTJat4fmWUxB0UIBbB6Qo4LXlnMSGqCTWTvnBFpC46kRufC-dt6JAIYdmmXD7l2H2SBWJy7bKdqWEygmP8WaTsh_cDFll6cvx_YehOpuTA8RJbQ6RIvp1yjl7CzotC4fHBD5QUBUHYZNLI59aWXRGu0VLScYzmSap4DCbfaGpg2zvYGLOsLFv-JgP2YyG2wZSBK24ck"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Black Diamond</span>
+<span class="font-label-sm text-label-sm text-emerald-800 font-bold">Snow Baskets Inc.</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate uppercase mt-0.5">Alpine Carbon Cork Poles</h4>
+<span class="font-body-sm text-body-sm text-secondary line-clamp-1">FlickLock Pro adjustability with natural cork grips.</span>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$179.95</span>
+<button class="text-primary hover:text-trail-gold-hover font-label-md text-label-md flex items-center gap-0.5">
+                  Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow flex items-center gap-4">
+<div class="w-24 h-24 rounded-lg bg-surface-container-high shrink-0 overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Compact electronic boot dryer and hot hand warmer packet stacked on rustic cedar bench ready for winter wilderness trek" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI-rBHutrtQIiEolo0fOFpYp6Zx-8-rFteJidldXbSDvfUIAmSk6wHZbYDHnqV8Mu_9noT0QcUeHSpCB8FWDNZk2mmbrGBP5n-j5gN3CzS3yq6_nGVP6NOxMf2QE3VakCCT9_gB19hjUgkYQCspFlb_n6RO5cYpKNNkhQkkxLRUdbDI0xRLulqi2touu4PT-NEEZvaTmHCHU5mGA2KYx492UBSIlDD7xqmkcWvjOY"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">DryGuy + Grabber</span>
+<span class="font-label-sm text-label-sm text-secondary">Cold Defense</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate uppercase mt-0.5">Travel Boot Warmers &amp; Heat Pack 10-Pk</h4>
+<span class="font-body-sm text-body-sm text-secondary line-clamp-1">Rapid forced-air boot dryer + 18-hr body warmth pads.</span>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$54.95</span>
+<button class="text-primary hover:text-trail-gold-hover font-label-md text-label-md flex items-center gap-0.5">
+                  Specs <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Collection 2: Isle Royale & Lake Superior Camp Essentials -->
+<section class="w-full bg-surface-container-low px-margin-mobile md:px-margin py-space-2xl" id="camp-kitchen">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-variant">water</span>
+            Backcountry Hydration &amp; Provisions
+          </div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-primary">
+            Isle Royale &amp; Lake Superior Camp Essentials
+          </h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl">
+            When packing into roadless island wilderness or rocky coastlines, clean water, compact stove systems, and bear-safe storage are non-negotiable.
+          </p>
+</div>
+<div class="flex items-center gap-3">
+<a class="bg-surface-container-highest hover:bg-surface-container text-primary font-label-lg text-label-lg px-4 py-2 rounded-lg transition-colors flex items-center gap-1.5" href="#">
+            Download Island Pack List <span class="material-symbols-outlined text-[18px]">download</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1: Water Filter -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Katadyn and Sawyer Squeeze water filters resting beside clear rushing crystalline Lake Superior shoreline water with pine trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB5-q-80sayrZprwBzBD99AIUY5Zh4cmfdIV5YBbzEEmdlystN03V6mw0fzx5THY4bjUV70RGYp5plwzXNfJTtiZjZh4ZXsUOriACRPxXHp9an9fCVMd_o36vpAJjAdu2B2NAsbcqCKaOXdg6-VMbZmofl8chpKPcD3cx-1aIbwOZay7wMiWZYBqMrvtfuu1bFIs0djbsHoK1GyBavBrCA0jnYdKTKaqJbclpU4tE"/>
+<span class="absolute top-2 left-2 bg-slate-surface text-canvas-paper font-label-sm text-label-sm px-2 py-0.5 rounded">0.1 Micron Absolute</span>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase">Sawyer &amp; Katadyn</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase">Sawyer Squeeze + Katadyn BeFree 1.0L</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Field-proven against Superior protozoa, cryptosporidium &amp; giardia. Flow rate up to 2 liters per minute.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary">$44.95 - $59.95</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-primary w-9 h-9 rounded-lg flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Lightweight Stoves -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="MSR PocketRocket ultralight backpacking stove boiling water in anodized aluminum kettle on wilderness campsite rocks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsleVzmb4kw5gpfSF9vBFaAvggFhFMFVoAmZuwBuGk6_KF1qrE9bPu-vY1zKBf5mPfjEUyZsFCmImwDWyJfiRqDuLOX_U68ju55hl5zgfXCpaH3SRfzi2EDwN-MPYB0QnfVWzYx0byWfGjxfkRtZB9QTxuFLKSZRz5qCwATZaIu_i9XOxynDBNjCXAns7tqSC93Yj2JaMnfynqnguabgPNsgMGmCNTuYdrAqkG05Y"/>
+<span class="absolute top-2 left-2 bg-trail-gold-hover text-on-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">Fast-Boil 3.5 Min</span>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase">MSR Outdoor</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase">PocketRocket Deluxe Stove Kit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Pressure-regulated valve for consistent output in frigid wind. Push-start Piezo ignition included.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary">$84.95</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-primary w-9 h-9 rounded-lg flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Backcountry Provisions -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Selection of Mountain House and Peak Refuel freeze dried trail meal pouches standing on weathered camp log" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPKo-W2Ingvh-G-4asyV51v2SqRqg4ttbU_WWfDpEjkdgW5ev9d-ZlCAN1OLIJ2Al1_5KAcbViGLicCIBJUpsNYADCUqpQoqRhn7_egrA2ZCUvbz58_acL7TELA_nx4i4qPuUWC_dd5iANEqHZmsZXRN3rJODmHlcotATyCoxhvhxgc3YXAhA3RqbCM6X-1A_o51O57KRz5z0cu14wTzYvZwdTDVgiflIdltYMQqQ"/>
+<span class="absolute top-2 left-2 bg-slate-surface text-canvas-paper font-label-sm text-label-sm px-2 py-0.5 rounded">High Calorie / Weight</span>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase">Peak Refuel &amp; Mt House</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase">Backcountry Rations Assortment</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              High-protein venison, beef pasta, breakfast scrambles, and gluten-free wilderness fuel pouches.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary">From $9.49</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-primary w-9 h-9 rounded-lg flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Bear Bags & Dry Storage -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Heavy duty Ursack Kevlar bear proof food storage sack tied securely to tree branch in dense birch forest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB81Ge6q998Lf9w8mvIGdjjl524zs7qAAeqmGZzhWn1RotGZy50gCcqa4S7z49-Oi-PfUeREqZJALSXF49oMxJFGgyPkC53cf8EF5l8QyTvre2GBt7gNm8D56uAZ-Gdfm8WzdhURcgqkv6N6X2V3A0VjAOOwK1xEgSbFP0WJvpOiZZTi6e3zcI8Ua7T7T3f9ycqT1wvwBoeG0bGQl4KrikpfCXcmd8jF93auDEBWSE"/>
+<span class="absolute top-2 left-2 bg-pine-deep text-canvas-paper font-label-sm text-label-sm px-2 py-0.5 rounded">Park Certified</span>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase">Ursack &amp; Sea to Summit</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase">Ursack Major Bear Sack 10L</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Bulletproof Spectra UHMWPE fabric certified by IGBC for Isle Royale campsite food storage rules.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary">$109.95</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-primary w-9 h-9 rounded-lg flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Collection 3 & 4: Pack & Carry + Hardware & Knives -->
+<section class="w-full px-margin-mobile md:px-margin py-space-2xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
+<!-- Left: Pack & Carry -->
+<div class="flex flex-col gap-space-lg" id="pack-carry">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-variant">backpack</span>
+            Load Carriage &amp; Portaging
+          </div>
+<h2 class="font-headline-md text-headline-md uppercase tracking-tight text-primary">
+            Pack &amp; Technical Carry
+          </h2>
+<p class="font-body-md text-body-md text-secondary">
+            Daypacks, heavy expedition haulers, and submerged-ready rolltop dry duffels.
+          </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Item Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row gap-space-md">
+<div class="w-full sm:w-36 h-40 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="The North Face Terra 55 technical internal frame backpack loaded for multi day trek set against granite rock face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0fDismoeBhg75UfTdO-RQIRZiaexLDx-e_AYQNvyR1Vcm12wRsHoEnO-7x_o2a36nnDGDnc4yZBBrferFB98b-Xax_SkmDH79Gelm33TGoyC_vkZzslQDcyWKRnuhBUr_BkQap3tr9fWBIqbYAPINUB6_dkaaTqvPnpKm70VjqrYwXGJyvueY0xBCi3YTqZevNnctsMtbX2mkKF_wvug4eOb553FZLzPqHKNUIU4"/>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">The North Face</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">55L Internal Frame</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mt-1">Terra 55 Backcountry Pack</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+                  OPTIFIT suspension system fine-tunes fit across the hips and torso during multi-day portaging through Keweenaw brush.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-3">
+<span class="font-headline-sm text-headline-sm text-primary">$179.00</span>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-3 py-1.5 rounded hover:bg-pine-deep transition-colors uppercase">
+                  Check Sizing
+                </button>
+</div>
+</div>
+</div>
+<!-- Item Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row gap-space-md">
+<div class="w-full sm:w-36 h-40 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Rugged 70 liter waterproof PVC submersible roll top dry duffel bag tied into wooden canoe on Lake Superior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh7X2I6-DTRLWaBdk-kPqLF2f6jy5fSg34aoZp3SCKnNBV6hk3ys4C01IOl-4C1RgrzCg6gDmRxLMd7TE8WXX0Nhela25BOSMEqAv5re2aUg3KTXDQ9sR0SISPkFZN_9ttpN82gAlrwGgFvzpMTEfJftckBErC2FVl0_uYd_cKaQT5lTIGDtkA6gyiZHClUqL-YrYi2UWeQbb2k-TarQuUf_ycdtOCpqcw2T2-A24"/>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">SealLine &amp; NRS</span>
+<span class="font-label-sm text-label-sm text-keweenaw-ice-blue bg-slate-surface px-2 py-0.5 rounded font-bold">IPX7 Submersible</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mt-1">Pro Portage 70L Dry Duffel</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+                  Reinforced 1000D scrim vinyl keeps sleeping kits bone-dry through Lake Superior spray and canoe swamps.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-3">
+<span class="font-headline-sm text-headline-sm text-primary">$189.95</span>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-3 py-1.5 rounded hover:bg-pine-deep transition-colors uppercase">
+                  In Stock (8)
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Hardware, Knives & Lighting -->
+<div class="flex flex-col gap-space-lg" id="hardware-lighting">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-variant">flashlight_on</span>
+            Blades, Tools &amp; Illumination
+          </div>
+<h2 class="font-headline-md text-headline-md uppercase tracking-tight text-primary">
+            Hardwear, Knives &amp; Lighting
+          </h2>
+<p class="font-body-md text-body-md text-secondary">
+            High-output rechargeable lamps, Swedish bushcraft steel, and multi-tools built for harsh utility.
+          </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Item Card 1: Headlamp -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row gap-space-md">
+<div class="w-full sm:w-36 h-40 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Black Diamond Storm 500 headlamp illuminated in dark winter forest with waterproof housing and headband strap" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm9ff1kLu13qtIVPjiVzD4O__lxQb25nXE2bYcGoj1wWBCmbtXjk75eHw4psKJpyHnIE8NDK-leepGa_uXoHz_2DgndJFF8yspZbk-eUEFy46oPRdeCt7YFRT_pUPeDieOVP9tExuiU6PMSndPX15iAKFckhwAEfGrQtFEGqwMQI_f2AGHRk6wxF8YkC6yrSMCfgNMTYtbxWcWEZ24BMmkAo-ooQ5BqiHA2p-UvgQ"/>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Black Diamond</span>
+<span class="font-label-sm text-label-sm text-trail-gold-hover font-bold">500 Lumens / IP67</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mt-1">Storm 500-R Rechargeable Lamp</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+                  Red, green, and blue night-vision modes; PowerTap instant brightness toggle tested down to -15°F.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-3">
+<span class="font-headline-sm text-headline-sm text-primary">$74.95</span>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-3 py-1.5 rounded hover:bg-pine-deep transition-colors uppercase">
+                  Details
+                </button>
+</div>
+</div>
+</div>
+<!-- Item Card 2: Mora & Leatherman -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row gap-space-md">
+<div class="w-full sm:w-36 h-40 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Morakniv carbon steel fixed blade bushcraft knife and Leatherman Wave multi tool resting on rustic hand hewn pine log" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZQV_3HW0-bKuH-_XXz_morio6l39UXk4zdjA7-6vKERvOQgO1U5bOfP3nyVOOGX8yviEr0wgdwLsCeqViiUy46MUeaeCLQSrHVcgKaWQr7uWBboNqouTiTjpGBMnn3iEBWYMCiytuY30NEzGQvx1ExILi2hXrQelM46EagvAM0_HxWNp6dU5rBc3EtNsCBijib4r-1woGydt5NMx0u6DBE0i4DRbq4nr57Ziwxv8"/>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Morakniv Sweden</span>
+<span class="font-label-sm text-label-sm text-emerald-800 font-bold">Bushcraft High-Carbon</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mt-1">Bushcraft Black 4.3" Fixed Blade</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+                  Tough 3.2mm thick carbon steel spine ground specifically for striking firesteels. Includes survival sheath.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-3">
+<span class="font-headline-sm text-headline-sm text-primary">$69.99</span>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-3 py-1.5 rounded hover:bg-pine-deep transition-colors uppercase">
+                  In Stock (19)
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Local Outfitter Wisdom: Trail Conditions & Isle Royale Ferry Prep -->
+<section class="w-full bg-slate-surface text-canvas-paper px-margin-mobile md:px-margin py-space-2xl" id="field-wisdom">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2 text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Keweenaw Intelligence Hub</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-canvas-paper mt-1">
+            Local Outfitter Wisdom &amp; Trail Status
+          </h2>
+</div>
+<div class="bg-pine-deep px-4 py-2.5 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">directions_boat</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">
+            Ferry docks: Houghton Ranger III (5 min) • Copper Harbor Isle Royale Queen IV (45 min)
+          </span>
+</div>
+</div>
+<!-- Live Trail Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Station 1: Mount Bohemia -->
+<div class="bg-surface-container-high/10 p-space-md rounded-xl flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-keweenaw-ice-blue">Lac La Belle</span>
+<span class="bg-emerald-900/60 text-emerald-300 font-label-sm text-label-sm px-2 py-0.5 rounded">Powder Packed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-canvas-paper">Mount Bohemia</h3>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim">
+              Extreme glades open. Heavy un-groomed powder on outer ridges. Require snowshoes with aggressive televator crampons or fat skis.
+            </p>
+</div>
+<div class="pt-2 text-tertiary-fixed text-label-sm font-label-sm uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Beacon &amp; Probe Mandatory
+          </div>
+</div>
+<!-- Station 2: Michigan Tech Trails -->
+<div class="bg-surface-container-high/10 p-space-md rounded-xl flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-keweenaw-ice-blue">Houghton</span>
+<span class="bg-emerald-900/60 text-emerald-300 font-label-sm text-label-sm px-2 py-0.5 rounded">Groomed Daily</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-canvas-paper">Michigan Tech Trails</h3>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim">
+              Nordic classic tracks set; skate lane fast. Light headlamps recommended for Nara extension past 5:30 PM sundown.
+            </p>
+</div>
+<div class="pt-2 text-tertiary-fixed text-label-sm font-label-sm uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Pass Available In-Store
+          </div>
+</div>
+<!-- Station 3: Maasto Hiihto & Churning Rapids -->
+<div class="bg-surface-container-high/10 p-space-md rounded-xl flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-keweenaw-ice-blue">Hancock</span>
+<span class="bg-amber-900/60 text-amber-300 font-label-sm text-label-sm px-2 py-0.5 rounded">Variable Drift</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-canvas-paper">Maasto Hiihto Trails</h3>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim">
+              Snowshoe loop tracked along Swedetown Creek. Deep lake effect winddrifts near the high plains; trekking poles with snow baskets recommended.
+            </p>
+</div>
+<div class="pt-2 text-tertiary-fixed text-label-sm font-label-sm uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Dog-Friendly System
+          </div>
+</div>
+<!-- Station 4: Isle Royale National Park -->
+<div class="bg-surface-container-high/10 p-space-md rounded-xl flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-keweenaw-ice-blue">Lake Superior</span>
+<span class="bg-blue-900/60 text-blue-300 font-label-sm text-label-sm px-2 py-0.5 rounded">Ferry Prep Season</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-canvas-paper">Isle Royale Departures</h3>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim">
+              Ranger III &amp; Isle Royale Queen boarding inspections check fuel canister compliance, verified bear containers, and water filtration status.
+            </p>
+</div>
+<div class="pt-2 text-tertiary-fixed text-label-sm font-label-sm uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Last-Stop Fuel &amp; Permits
+          </div>
+</div>
+</div>
+<!-- Ferry Departure Callout Banner -->
+<div class="bg-gradient-to-r from-primary-container via-pine-deep to-slate-surface p-space-lg rounded-xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg shadow-xl">
+<div class="flex items-start gap-space-md max-w-2xl">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed-dim text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">directions_boat</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm uppercase text-canvas-paper">
+              Heading to Isle Royale via Houghton or Copper Harbor?
+            </h3>
+<p class="font-body-md text-body-md text-secondary-fixed-dim">
+              Surplus Outlet is your final outfitting checkpoint before boarding. We stock white gas and isobutane fuel canisters (which cannot be flown on commercial planes), bear-proof food canisters, emergency repair hardware, and official NOAA trail charts.
+            </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto shrink-0">
+<a class="w-full sm:w-auto bg-tertiary-fixed-dim hover:bg-trail-gold-hover text-on-tertiary-fixed font-label-lg text-label-lg px-6 py-3 rounded-lg uppercase tracking-wider text-center transition-colors" href="#">
+            Get Pre-Ferry Checklist
+          </a>
+<a class="w-full sm:w-auto bg-surface-container-high/20 hover:bg-surface-container-high/30 text-canvas-paper font-label-lg text-label-lg px-6 py-3 rounded-lg uppercase tracking-wider text-center transition-colors flex items-center justify-center gap-2" href="tel:19064822550">
+<span class="material-symbols-outlined text-[18px]">call</span> (906) 482-2550
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Equipment Spec Tool / Quick Sizing Modal Support -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">handyman</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-primary">Need in-store pack fitting or snowshoe binding adjust?</span>
+<span class="font-body-sm text-body-sm text-secondary">Our Houghton outfitters measure torso lengths and boot sizes free of charge every day.</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-label-md text-label-md text-primary font-bold">Open Daily 9am - 8pm</span>
+<a class="bg-primary hover:bg-pine-deep text-on-primary font-label-md text-label-md px-4 py-2 rounded uppercase tracking-wider transition-colors" href="contact.html">
+          Visit Us Today
+        </a>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-slate-surface text-canvas-paper pt-space-2xl pb-space-xl"><div class="w-full px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-2xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-tight uppercase text-keweenaw-ice-blue">Surplus Outlet</span></div><p class="font-body-sm text-body-sm text-secondary-fixed-dim leading-relaxed">Equipping Keweenaw explorers, U.P. backcountry hunters, hikers, and university locals since 1978 with trusted rugged apparel and reliable outdoor equipment.</p><div class="flex items-center gap-space-sm pt-space-sm"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">verified</span><span class="font-label-md text-label-md text-tertiary-fixed">Authentic Lake Superior Outfitter</span></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-canvas-paper">Houghton Location</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-secondary-fixed-dim"><span class="text-canvas-paper font-title-md text-title-md">Surplus Outlet Store</span><span>Memorial Union Corridor / M-26</span><span>Houghton, MI 49931</span><span class="pt-2 font-label-md text-label-md text-keweenaw-ice-blue">Direct: 1 (906) 482-2550</span></div><div class="pt-space-xs"><span class="font-label-sm text-label-sm text-trail-gold-hover uppercase tracking-widest block mb-1">Store Hours</span><div class="grid grid-cols-2 gap-y-1 font-body-sm text-body-sm text-secondary-fixed-dim"><span>Monday - Saturday:</span><span class="text-canvas-paper font-label-md text-label-md">9:00 AM - 8:00 PM</span><span>Sunday:</span><span class="text-canvas-paper font-label-md text-label-md">10:00 AM - 5:00 PM</span></div></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-canvas-paper">Departments &amp; Brands</span><div class="flex flex-col gap-space-xs font-label-lg text-label-lg"><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="brands" href="brands.html">Top Brand Showcase</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="apparel-footwear" href="apparel.html">Rugged Outerwear &amp; Boots</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="outdoor-gear" href="gear.html">Keweenaw Trail &amp; Camp Gear</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="outdoor-gear" href="gear.html">Winter Field Equipment</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="about" href="about.html">Heritage &amp; Local Roots</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="contact" href="contact.html">Store Directions &amp; Contact</a></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-canvas-paper">Field Dispatch</span><p class="font-body-sm text-body-sm text-secondary-fixed-dim">Subscribe for seasonal gear drops, UP trail conditions, and surplus arrival notifications.</p><div class="flex flex-col gap-space-sm"><input class="w-full px-3 py-2 bg-surface-variant text-on-surface rounded-lg font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-tertiary-fixed" placeholder="Enter your email address" type="email"/><button class="w-full py-2 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-pine-deep hover:text-canvas-paper transition-all uppercase tracking-wide" type="button">Join Field Roster</button></div></div></div><div class="pt-space-lg flex flex-col md:flex-row justify-between items-center gap-space-md text-label-sm font-label-sm text-secondary-fixed-dim"><p>© 2025 Surplus Outlet Houghton. All Rights Reserved. Lake Superior Proven Field Outfitters.</p><div class="flex gap-space-lg"><a class="hover:text-canvas-paper transition-colors" href="#">Terms of Service</a><a class="hover:text-canvas-paper transition-colors" href="#">Privacy Policy</a><a class="hover:text-canvas-paper transition-colors" href="#">In-Store Pickup Policy</a></div></div></div></footer><script defer src="site.js"></script>
+</body></html>

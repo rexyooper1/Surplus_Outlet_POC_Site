@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed-variant": "#643f00", "secondary-fixed-dim": "#c1c7cc", "surface-tint": "#456553", "on-error": "#ffffff", "on-primary-fixed": "#002113", "on-tertiary-fixed": "#2a1800", "surface-dim": "#dbdad5", "primary-container": "#1b3b2b", "keweenaw-ice-blue": "#B9D2DF", "pine-deep": "#0E2419", "primary-fixed-dim": "#abcfb8", "on-secondary": "#ffffff", "inverse-primary": "#abcfb8", "on-primary-container": "#83a590", "on-primary-fixed-variant": "#2d4d3c", "on-tertiary": "#ffffff", "slate-surface": "#161B1E", "tertiary": "#301c00", "tertiary-fixed-dim": "#ffb957", "error": "#ba1a1a", "surface-container-high": "#eae8e3", "primary": "#032517", "background": "#fbf9f4", "tertiary-fixed": "#ffddb5", "tertiary-container": "#4c2f00", "secondary": "#595f64", "error-container": "#ffdad6", "secondary-container": "#dbe0e6", "on-error-container": "#93000a", "inverse-surface": "#30312e", "on-primary": "#ffffff", "surface-container-highest": "#e4e2dd", "surface-bright": "#fbf9f4", "outline-variant": "#c1c8c2", "on-tertiary-container": "#d19133", "surface-variant": "#e4e2dd", "timber-bark": "#5C4328", "surface-container-lowest": "#ffffff", "on-surface-variant": "#424843", "on-surface": "#1b1c19", "canvas-paper": "#FAF8F5", "on-secondary-fixed": "#161c20", "secondary-fixed": "#dee3e8", "on-secondary-fixed-variant": "#41484c", "border-subtle": "#E2DDD5", "on-secondary-container": "#5d6368", "primary-fixed": "#c7ebd4", "surface-container": "#f0eee9", "outline": "#727973", "surface-container-low": "#f5f3ee", "trail-gold-hover": "#A86F1E", "inverse-on-surface": "#f2f1ec", "surface": "#fbf9f4", "on-background": "#1b1c19" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1.25rem", "margin": "2.5rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "space-2xl": "4rem" }, "fontFamily": { "headline-md": [ "Outfit" ], "title-md": [ "Plus Jakarta Sans" ], "label-lg": [ "Outfit" ], "headline-sm": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Outfit" ], "label-md": [ "Outfit" ], "body-sm": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Outfit" ], "display-lg": [ "Outfit" ], "headline-lg": [ "Outfit" ], "label-sm": [ "Outfit" ], "body-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "display-lg-mobile": [ "34px", { "lineHeight": "42px", "fontWeight": "700" } ], "display-lg": [ "48px", { "lineHeight": "56px", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ] } } } };</script><link href="site.css" rel="stylesheet"/>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-canvas-paper/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-1 px-margin-mobile md:px-margin text-label-sm font-label-sm tracking-wider uppercase flex justify-between items-center"><div class="flex items-center gap-space-sm"><span>Keweenaw Peninsula Outfitter • Houghton, Michigan</span></div><div class="flex items-center gap-space-lg"><a class="hover:text-primary-fixed transition-colors" href="tel:19064822550">Call Us: 1 (906) 482 - 2550</a><span class="hidden md:inline-block text-outline-variant">|</span><span class="hidden md:flex items-center gap-space-xs text-on-tertiary-container"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim inline-block animate-pulse"></span>Open Today 9am - 8pm</span></div></div><div class="h-20 w-full px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><a aria-label="Surplus Outlet home" class="flex items-center gap-space-md shrink-0" href="index.html"><img alt="Surplus Outlet" class="h-16 w-auto object-contain shrink-0" height="64" src="logo.jpg" width="128"/><span class="so-tagline"><span>Take It</span> <span class="so-tagline__accent">Outside</span></span></a><div class="hidden lg:flex items-center flex-1 max-w-md mx-space-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary shadow-[0_1px_4px_rgba(0,0,0,0.04)]" placeholder="Search rugged apparel, footwear, outdoor gear..." type="search"/></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface"><span class="material-symbols-outlined text-primary text-[18px]">store</span><span class="font-label-md text-label-md">Houghton Store</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full px-margin-mobile md:px-margin pb-3"><nav aria-label="Primary" class="flex items-center gap-space-lg overflow-x-auto whitespace-nowrap" id="primary-nav"><a aria-current="page" class="font-label-lg text-label-lg transition-colors py-1 px-2 rounded-lg bg-primary-container text-on-primary" data-path="home" href="index.html">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="brands" href="brands.html">Brands We Carry</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="apparel-footwear" href="apparel.html">Apparel &amp; Footwear</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="outdoor-gear" href="gear.html">Outdoor Gear</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="about" href="about.html">About Us</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg" data-path="contact" href="contact.html">Contact &amp; Hours</a></nav></div></header><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<!-- Immersive Keweenaw Outfitter Hero Section -->
+<section class="relative w-full -mt-36 pt-36 pb-space-2xl overflow-hidden bg-pine-deep text-canvas-paper">
+<!-- Atmospheric Visual Layer -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-40 mix-blend-luminosity scale-105 transition-transform duration-1000" data-alt="Rugged Keweenaw Peninsula forest wilderness with towering evergreen pine trees misty Lake Superior shoreline in Upper Peninsula Michigan cool morning mist cinematic deep forest greens and cold atmospheric light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCv6tFawGQSSDN5HMv-uwEyrhUPZyhPMNJEnJyUwzQCDrGsmkw2JaWoipIoLKb9_FRkAWFA13C_2QobOzkH4i9yn8kBWhio8bhIIx3YwkrUtmIzrEAYq5AUpAHK3Vkdw_tw9uew500qk2cPoSoOs8Pzv6BLcovZTOCsT8bizbbQWQZcZ9fsdiuvVZWnDEZyrcU-eIMiYmhNGhx6m6O32MlmPLwIigIUlEP0XYhYtu8')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-pine-deep via-pine-deep/80 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-pine-deep via-pine-deep/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin max-w-7xl mx-auto pt-space-xl">
+<!-- Top Tagline Badges -->
+<div class="flex flex-wrap items-center gap-space-sm mb-space-lg">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 bg-primary-container text-keweenaw-ice-blue rounded-full shadow-sm">
+<span class="material-symbols-outlined text-sm">terrain</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Serving the Keweenaw &amp; Upper Peninsula</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-3 py-1 bg-surface-container-high/20 backdrop-blur-md text-tertiary-fixed rounded-full shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Top Outdoor Brands in Stock</span>
+</div>
+</div>
+<!-- Core Value Proposition Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase tracking-tight text-canvas-paper leading-none">
+            Welcome to <br/>
+<span class="text-keweenaw-ice-blue font-display-lg">Surplus Outlet</span>
+</h1>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim max-w-2xl leading-relaxed">
+            Surplus Outlet is an outdoor retailer located in the small town of Houghton, MI. We carry brands like The North Face, Columbia, Carhartt and Keen. Stop in to see our vast array of products, we look forward to seeing you!
+          </p>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-3 bg-tertiary-fixed-dim hover:bg-trail-gold-hover text-on-tertiary-fixed font-label-lg text-label-lg uppercase tracking-wider rounded-lg shadow-md transition-all duration-200 hover:-translate-y-0.5" href="#brands">
+<span>See Our Brands</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3 bg-surface-container-high/15 hover:bg-surface-container-high/30 text-canvas-paper font-label-lg text-label-lg uppercase tracking-wider rounded-lg backdrop-blur-sm transition-all duration-200" href="#store-hours">
+<span class="material-symbols-outlined text-base">schedule</span>
+<span>View Store Hours</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3 bg-surface-container-high/15 hover:bg-surface-container-high/30 text-canvas-paper font-label-lg text-label-lg uppercase tracking-wider rounded-lg backdrop-blur-sm transition-all duration-200" href="#location">
+<span class="material-symbols-outlined text-base">near_me</span>
+<span>Get Directions</span>
+</a>
+</div>
+</div>
+<!-- Quick Status Card (Houghton Local Snapshot) -->
+<div class="lg:col-span-4 w-full">
+<div class="p-space-lg rounded-xl bg-slate-surface/90 backdrop-blur-md shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-xl">pin_drop</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-wide text-canvas-paper">Houghton, MI</span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-primary-container text-on-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+                Open Today
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs text-secondary-fixed-dim">
+<div class="p-3 bg-primary-container/40 rounded-lg">
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-keweenaw-ice-blue">Today's Hours</span>
+<span class="font-title-md text-title-md text-canvas-paper" id="quick-today-hours">9:00am - 8:00pm</span>
+</div>
+<div class="p-3 bg-primary-container/40 rounded-lg">
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-keweenaw-ice-blue">Store Support</span>
+<a class="font-title-md text-title-md text-canvas-paper hover:text-tertiary-fixed transition-colors" href="tel:19064822550">482-2550</a>
+</div>
+</div>
+<div class="text-label-sm font-label-sm text-secondary-fixed-dim flex items-center justify-between pt-space-xs">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim">check_circle</span>
+                Lake Superior Backcountry Outfitted
+              </span>
+<span class="text-canvas-paper/70 font-mono">EST</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Metric Badges & Outfitter Credibility Bar -->
+<section class="w-full bg-surface-container py-space-md shadow-sm">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl">verified_user</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Authorized Outfitter</span>
+<span class="font-body-sm text-body-sm text-secondary">Official Dealer for The North Face, Carhartt &amp; Columbia</span>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl">cabin</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Houghton Hometown</span>
+<span class="font-body-sm text-body-sm text-secondary">Local Copper Country roots &amp; trail gear specialists</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl">local_shipping</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Prompt Service</span>
+<span class="font-body-sm text-body-sm text-secondary">Quick in-store pickup &amp; rapid custom gear sourcing</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Brands Showcase Section -->
+<section class="w-full py-space-2xl px-margin-mobile md:px-margin max-w-7xl mx-auto" id="brands">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-on-tertiary-container">Trusted Performance</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg uppercase text-primary">Brands We Carry</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">
+          Engineered for northern winters, Lake Superior squalls, and deep forest trails. We stock only proven, durable equipment.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Stocked Daily in Houghton</span>
+</div>
+</div>
+<!-- 4 Primary Brands Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- The North Face -->
+<div class="group relative rounded-xl bg-surface-container-lowest overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full h-56 overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Hiker wearing a technical black and dark green The North Face insulated winter jacket overlooking rugged snowy Keweenaw cliffs with freezing Lake Superior waves below in crisp bright northern light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8pftKzW7gQEtCP1TTFgFYctr9JUmp6gbDRp5nJx32NDX0vpZXNSdWxq9ZjZKKRrJZPdmbk5V3-Z-zjjcPkk9VI4h59EHPlKIw7t5V9c7JW58178yGixWp6ys3T3k9KabQ6SR4Rgsuo5HgG8bXlDzpA29tersT5eHwtIsoUSnIanA7qi_YrHYWLqCIapTXtC-Fu7ItQAqAbRSP37aGe0F05HJAFNc0fFBNij2YcA8')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-pine-deep/80 via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-pine-deep/90 text-keweenaw-ice-blue font-label-sm text-label-sm uppercase tracking-wide backdrop-blur-sm">Alpine Proven</span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-tertiary-container font-mono">Premier Partner</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary tracking-tight">The North Face</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Technical outerwear, ThermoBall insulation, fleeces, daypacks, and mountaineering essentials for UP weather.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Parkas • Packs • Fleece</span>
+<span class="material-symbols-outlined text-primary text-xl group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+</div>
+<!-- Columbia Sportswear -->
+<div class="group relative rounded-xl bg-surface-container-lowest overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full h-56 overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Trail runner and explorer in Columbia waterproof shell jacket with thermal reflective lining trekking along dense Michigan Upper Peninsula forest trail surrounded by hemlock and birch trees" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-oMTo0_lghzwtwZ1VKwoKvXSNZXDU4efyl74jx8uUxsKt2b9JEFe3wBj3NGfCljvq3gIEU_P4yS874e6AOJ7HUcVmIFPdOvdvdt91Dz56iFeQpHKahuR84VoFuEGsRv_sFpUyOkZEZnCAoY7nc_p-adVxidddM6WP80Z8KAsS80Li5QPTp1Nj5wAVxbKpsNTAGmhyWyZDzDSfoXJ2pg96IyYbmujwp0VkkVVwM2g')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-pine-deep/80 via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-pine-deep/90 text-keweenaw-ice-blue font-label-sm text-label-sm uppercase tracking-wide backdrop-blur-sm">All-Weather</span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-tertiary-container font-mono">Premier Partner</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary tracking-tight">Columbia</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Omni-Heat winter shells, lightweight rainwear, rugged fleece pullovers, and breathable trail shirts for every season.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Omni-Heat • Shells • Boots</span>
+<span class="material-symbols-outlined text-primary text-xl group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+</div>
+<!-- Carhartt -->
+<div class="group relative rounded-xl bg-surface-container-lowest overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full h-56 overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Heavy-duty duck canvas Carhartt work coat and rugged knit beanie worn during harsh outdoor northern work in crisp cold climate with timber and tools in background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHdMAac47klE2wcWx7OsA2LJyDN_fpsMWA-CWFLyEnFkS9NWJKetVlChjUNCop1FlYk1ju7lTNXgPs_r7eCtb90mkmVPrdu0cAckUIowV62v-ocM0KKeIU-GaYwkPySM7IYrfuy84THB0HJMQvIZ_efW9UeG4J63LdNxFF4tSO3jP5KEBuGq9nuRe-lw6koPfQEdqesq-M6dMSrhuHfRWMZ9CQiRN7CerLvNrmIPQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-pine-deep/80 via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-pine-deep/90 text-keweenaw-ice-blue font-label-sm text-label-sm uppercase tracking-wide backdrop-blur-sm">Heavy Duty</span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-tertiary-container font-mono">Work &amp; Field</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary tracking-tight">Carhartt</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Heavy duck active jackets, rugged bib overalls, thermal work hoodies, heavyweight flannel shirts, and iconic watch caps.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Duck Coats • Overalls • Beanies</span>
+<span class="material-symbols-outlined text-primary text-xl group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+</div>
+<!-- Keen -->
+<div class="group relative rounded-xl bg-surface-container-lowest overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full h-56 overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Durable KEEN waterproof hiking boots covered in rugged mud and dirt stepping on wet mossy bedrock along Portage Lake trail with crisp footwear detail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTVvmigOh9T66H7R-F5cg3pwVVstgxwr-BaTxaAZGOnsT6oUc5OkROcCqrG3KuGOqA0V6f87WDHOKFw-8rKUGYd8uiER7Ebnqea1g8ooh-_iCtO-1wxcjdoyFms-g4RDVAP0kDVcvzwAJtwKS1-q9kJgVIAjplnE9xpMVX60k2k3hMBt8XakDvESFLko_c3sqBShCXC2kVBI24Ht-Y69HCiaSqeKpd8-ghCxLnsnw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-pine-deep/80 via-transparent to-transparent"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-pine-deep/90 text-keweenaw-ice-blue font-label-sm text-label-sm uppercase tracking-wide backdrop-blur-sm">Traction Built</span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-tertiary-container font-mono">Footwear Specialist</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary tracking-tight">Keen</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Targhee waterproof hiking boots, Keen Utility steel and composite work footwear, and rugged trail sandals for Keweenaw summers.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Hiking Boots • Utility • Trail</span>
+<span class="material-symbols-outlined text-primary text-xl group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Category Quick Selector -->
+<div class="mt-space-xl p-space-lg rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-keweenaw-ice-blue flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">category</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm uppercase text-primary block">Explore Our Departments</span>
+<span class="font-body-sm text-body-sm text-secondary">Boots, Winter Parkas, Camping Tents, Backcountry Cooking &amp; Work Bibs</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-md text-label-md text-on-surface shadow-sm">Outerwear</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-md text-label-md text-on-surface shadow-sm">Footwear</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-md text-label-md text-on-surface shadow-sm">Work Wear</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-md text-label-md text-on-surface shadow-sm">Camping Gear</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-md text-label-md text-on-surface shadow-sm">Cold Weather Hats</span>
+</div>
+</div>
+</section>
+<!-- Houghton Store Visit & Hours Experience -->
+<section class="w-full bg-surface-container-high/40 py-space-2xl" id="store-hours">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="flex flex-col gap-space-xs mb-space-xl">
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-on-tertiary-container">Copper Country Headquarters</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg uppercase text-primary">Visit Us in Houghton</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">
+          Located right in Houghton, MI. Drop in to try on jackets, check boot fits, or consult with our local gear team before heading out.
+        </p>
+</div>
+<!-- Main Dual Grid: Hours & Location Map -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Verbatim Store Hours Table Card -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-keweenaw-ice-blue flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">access_time</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-primary">Store Hours</h3>
+</div>
+<!-- Dynamic Open Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed" id="live-open-indicator">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Open Now
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+            Weekly store schedule for in-person shopping, gear fitting, and in-store order pickups.
+          </p>
+<!-- Verbatim Weekly Hours Table -->
+<div class="flex flex-col gap-1.5 font-body-md text-body-md" id="hours-table">
+<div class="day-row flex items-center justify-between p-2.5 rounded-lg bg-surface hover:bg-surface-container transition-colors" data-day="0">
+<span class="font-label-md text-label-md uppercase text-on-surface">Sunday</span>
+<span class="font-title-md text-title-md text-primary font-mono">10:00am - 4:00pm</span>
+</div>
+<div class="day-row flex items-center justify-between p-2.5 rounded-lg bg-surface hover:bg-surface-container transition-colors" data-day="1">
+<span class="font-label-md text-label-md uppercase text-on-surface">Monday</span>
+<span class="font-title-md text-title-md text-primary font-mono">9:00am - 8:00pm</span>
+</div>
+<div class="day-row flex items-center justify-between p-2.5 rounded-lg bg-surface hover:bg-surface-container transition-colors" data-day="2">
+<span class="font-label-md text-label-md uppercase text-on-surface">Tuesday</span>
+<span class="font-title-md text-title-md text-primary font-mono">9:00am - 8:00pm</span>
+</div>
+<div class="day-row flex items-center justify-between p-2.5 rounded-lg bg-surface hover:bg-surface-container transition-colors" data-day="3">
+<span class="font-label-md text-label-md uppercase text-on-surface">Wednesday</span>
+<span class="font-title-md text-title-md text-primary font-mono">9:00am - 8:00pm</span>
+</div>
+<div class="day-row flex items-center justify-between p-2.5 rounded-lg bg-surface hover:bg-surface-container transition-colors" data-day="4">
+<span class="font-label-md text-label-md uppercase text-on-surface">Thursday</span>
+<span class="font-title-md text-title-md text-primary font-mono">9:00am - 8:00pm</span>
+</div>
+<div class="day-row flex items-center justify-between p-2.5 rounded-lg bg-surface hover:bg-surface-container transition-colors" data-day="5">
+<span class="font-label-md text-label-md uppercase text-on-surface">Friday</span>
+<span class="font-title-md text-title-md text-primary font-mono">9:00am - 8:00pm</span>
+</div>
+<div class="day-row flex items-center justify-between p-2.5 rounded-lg bg-surface hover:bg-surface-container transition-colors" data-day="6">
+<span class="font-label-md text-label-md uppercase text-on-surface">Saturday</span>
+<span class="font-title-md text-title-md text-primary font-mono">9:00am - 8:00pm</span>
+</div>
+</div>
+<!-- Direct Call Box -->
+<div class="mt-space-xs p-space-md rounded-lg bg-primary-container text-canvas-paper flex items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-keweenaw-ice-blue uppercase tracking-wider">Phone Orders &amp; Questions</span>
+<a class="font-headline-sm text-headline-sm hover:text-tertiary-fixed-dim transition-colors" href="tel:19064822550">1 (906) 482 - 2550</a>
+</div>
+<a class="p-3 rounded-full bg-pine-deep hover:bg-trail-gold-hover text-canvas-paper transition-all" href="tel:19064822550">
+<span class="material-symbols-outlined text-xl">call</span>
+</a>
+</div>
+</div>
+<!-- Location, Directions & Map Section -->
+<div class="lg:col-span-7 flex flex-col gap-space-md" id="location">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined">storefront</span>
+<h3 class="font-headline-md text-headline-md uppercase">Houghton Outfitter Location</h3>
+</div>
+<span class="font-body-md text-body-md text-secondary">Houghton, Michigan 49931 • Keweenaw County Corridor</span>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-lg hover:bg-pine-deep transition-all" href="https://maps.google.com/?q=Surplus+Outlet+Houghton+MI" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">directions</span>
+<span>Get Directions</span>
+</a>
+</div>
+<!-- Integrated Map Display -->
+<div class="w-full h-80 rounded-lg bg-cover bg-center overflow-hidden shadow-inner relative group" data-location="Surplus Outlet, Houghton, MI" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAKijLHSPe7_fEjbHPK_2vUnU2gQah-JneYm57tWFyxDRhEQ4YGKBPAUwNg5oRROiZhwHtiHZWVHRoC-RHXHb0ImnPQte4OJDG_XRTphbe-GSkzAS-qYzapV8bZcBdQVvssZjPyQWvt_hLpDv2QF4HBtOLG9rd8lrdyuWSdTCI7leVm-Z_9M3_RLAdeCC4QqsfHmpvM2UnHYQjiYSWDMUcrWKN0MOmQBVOJvYf8XSs')">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors"></div>
+<div class="absolute bottom-4 left-4 bg-slate-surface/95 text-canvas-paper p-space-md rounded-lg shadow-lg max-w-sm backdrop-blur-sm">
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-md text-label-md uppercase font-bold text-keweenaw-ice-blue">Surplus Outlet</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim leading-snug">
+                  Easy roadside access, ample outdoor vehicle parking, and direct connection to local trailheads.
+                </p>
+</div>
+</div>
+<!-- Helpful Travel & Parking Info -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-xs text-on-surface">
+<div class="p-3 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md uppercase mb-1">
+<span class="material-symbols-outlined text-base">local_parking</span>
+<span>Parking</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary block">Ample on-site parking for trucks, trailers &amp; campers.</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md uppercase mb-1">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span>Order Pickup</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary block">Fast in-store pick-up counter for call-ahead orders.</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md uppercase mb-1">
+<span class="material-symbols-outlined text-base">contact_support</span>
+<span>Direct Help</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary block">Experienced staff ready with fit and size recommendations.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Voice & Authentic Community Trust Section -->
+<section class="w-full py-space-2xl px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="rounded-2xl bg-pine-deep text-canvas-paper p-space-xl md:p-space-2xl shadow-xl relative overflow-hidden">
+<!-- Decorative Pine Contour Lines -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary-container/30 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Trust Stats & Badges -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 bg-surface-container-high/15 rounded-full text-keweenaw-ice-blue w-fit">
+<span class="material-symbols-outlined text-sm">reviews</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Houghton Community Trust</span>
+</div>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg uppercase text-canvas-paper tracking-tight">
+            What Our <br/>Customers Are Saying
+          </h2>
+<div class="flex items-center gap-space-md pt-space-xs">
+<div class="flex items-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-title-md text-title-md text-canvas-paper font-bold">5.0 / 5.0</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">• Verified Keweenaw Shoppers</span>
+</div>
+<p class="font-body-md text-body-md text-secondary-fixed-dim">
+            From local loggers and MTU students to visiting Isle Royale and Keweenaw trail hikers, we take pride in honest service and gear reliability.
+          </p>
+</div>
+<!-- Right Column: Prominent Verbatim Quote Card -->
+<div class="lg:col-span-7">
+<div class="p-space-xl rounded-xl bg-slate-surface/80 backdrop-blur-md shadow-lg flex flex-col gap-space-lg relative">
+<span class="material-symbols-outlined text-5xl text-tertiary-fixed-dim opacity-40 leading-none">format_quote</span>
+<!-- Real Document Verbatim Review Quote -->
+<blockquote class="font-headline-sm text-headline-sm md:text-headline-md text-canvas-paper italic leading-relaxed">
+              “Very good customer service, online and in store orders come in a timely manner. Great store. They have my business.”
+            </blockquote>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-tertiary-fixed-dim font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+                  S
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-canvas-paper leading-none">Verified Customer</span>
+<span class="font-label-sm text-label-sm text-keweenaw-ice-blue">Houghton In-Store &amp; Pick-Up Buyer</span>
+</div>
+</div>
+<!-- Quick direct phone badge from text document -->
+<div class="flex items-center gap-space-xs text-secondary-fixed-dim font-label-md text-label-md">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-sm">phone</span>
+<span>Phone: <a class="text-canvas-paper hover:underline" href="tel:19064822550">1 (906) 482 - 2550</a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trail-Ready Gear Guarantee Callout -->
+<section class="w-full bg-surface-container py-space-xl mb-space-2xl">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-lg text-center md:text-left">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<h3 class="font-headline-md text-headline-md uppercase text-primary">Heading to Isle Royale, Porcupine Mountains or Mount Bohemia?</h3>
+<p class="font-body-md text-body-md text-secondary">
+          Stop by our Houghton store before you head north. From water filtration and wool socks to insulated boots and heavy shell layers, we have your back.
+        </p>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<a class="px-space-xl py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider rounded-lg hover:bg-pine-deep shadow-md transition-all" href="#location">
+          Store Directions
+        </a>
+</div>
+</div>
+</section>
+</div>
+<!-- Inline Logic for Dynamic Current Day Highlighting and Live Hours -->
+<script>
+  (function() {
+    // Highlight today's row in the hours table
+    const today = new Date().getDay(); // 0 is Sunday, 1 is Monday, etc.
+    const rows = document.querySelectorAll('.day-row');
+    rows.forEach(row => {
+      const dayVal = parseInt(row.getAttribute('data-day'), 10);
+      if (dayVal === today) {
+        row.classList.remove('bg-surface');
+        row.classList.add('bg-primary-container', 'text-canvas-paper', 'shadow-sm');
+        const dayLabel = row.querySelector('.font-label-md');
+        const timeLabel = row.querySelector('.font-title-md');
+        if (dayLabel) {
+          dayLabel.classList.remove('text-on-surface');
+          dayLabel.classList.add('text-tertiary-fixed-dim', 'font-bold');
+          dayLabel.innerHTML += ' <span class="text-xs bg-pine-deep px-2 py-0.5 rounded text-keweenaw-ice-blue uppercase ml-1">Today</span>';
+        }
+        if (timeLabel) {
+          timeLabel.classList.remove('text-primary');
+          timeLabel.classList.add('text-canvas-paper', 'font-bold');
+        }
+      }
+    });
+
+    // Check if store is currently open
+    const now = new Date();
+    const currentDay = now.getDay();
+    const currentHour = now.getHours() + (now.getMinutes() / 60);
+    const indicator = document.getElementById('live-open-indicator');
+    const quickHours = document.getElementById('quick-today-hours');
+
+    let openHour = 9;
+    let closeHour = 20;
+
+    if (currentDay === 0) { // Sunday
+      openHour = 10;
+      closeHour = 16;
+      if (quickHours) quickHours.innerText = '10:00am - 4:00pm';
+    } else {
+      if (quickHours) quickHours.innerText = '9:00am - 8:00pm';
+    }
+
+    if (indicator) {
+      if (currentHour >= openHour && currentHour < closeHour) {
+        indicator.innerHTML = '<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> Open Now';
+        indicator.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed';
+      } else {
+        indicator.innerHTML = '<span class="w-2 h-2 rounded-full bg-error"></span> Closed Now';
+        indicator.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-secondary';
+      }
+    }
+  })();
+</script></main><footer class="w-full bg-slate-surface text-canvas-paper pt-space-2xl pb-space-xl"><div class="w-full px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-2xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-tight uppercase text-keweenaw-ice-blue">Surplus Outlet</span></div><p class="font-body-sm text-body-sm text-secondary-fixed-dim leading-relaxed">Equipping Keweenaw explorers, U.P. backcountry hunters, hikers, and university locals since 1978 with trusted rugged apparel and reliable outdoor equipment.</p><div class="flex items-center gap-space-sm pt-space-sm"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">verified</span><span class="font-label-md text-label-md text-tertiary-fixed">Authentic Lake Superior Outfitter</span></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-canvas-paper">Houghton Location</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-secondary-fixed-dim"><span class="text-canvas-paper font-title-md text-title-md">Surplus Outlet Store</span><span>Memorial Union Corridor / M-26</span><span>Houghton, MI 49931</span><span class="pt-2 font-label-md text-label-md text-keweenaw-ice-blue">Direct: (906) 482-2550</span></div><div class="pt-space-xs"><span class="font-label-sm text-label-sm text-trail-gold-hover uppercase tracking-widest block mb-1">Store Hours</span><div class="grid grid-cols-2 gap-y-1 font-body-sm text-body-sm text-secondary-fixed-dim"><span>Monday - Saturday:</span><span class="text-canvas-paper font-label-md text-label-md">9:00 AM - 8:00 PM</span><span>Sunday:</span><span class="text-canvas-paper font-label-md text-label-md">10:00 AM - 5:00 PM</span></div></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-canvas-paper">Departments &amp; Brands</span><div class="flex flex-col gap-space-xs font-label-lg text-label-lg"><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="brands-we-carry" href="brands.html">Top Brand Showcase</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="apparel-footwear" href="apparel.html">Rugged Outerwear &amp; Boots</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="outdoor-gear" href="gear.html">Keweenaw Trail &amp; Camp Gear</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="outdoor-gear" href="gear.html">Winter Field Equipment</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="about" href="about.html">Heritage &amp; Local Roots</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="contact" href="contact.html">Store Directions &amp; Contact</a></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-canvas-paper">Field Dispatch</span><p class="font-body-sm text-body-sm text-secondary-fixed-dim">Subscribe for seasonal gear drops, UP trail conditions, and surplus arrival notifications.</p><div class="flex flex-col gap-space-sm"><input class="w-full px-3 py-2 bg-surface-variant text-on-surface rounded-lg font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-tertiary-fixed" placeholder="Enter your email address" type="email"/><button class="w-full py-2 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-pine-deep hover:text-canvas-paper transition-all uppercase tracking-wide" type="button">Join Field Roster</button></div></div></div><div class="pt-space-lg flex flex-col md:flex-row justify-between items-center gap-space-md text-label-sm font-label-sm text-secondary-fixed-dim"><p>© 2025 Surplus Outlet Houghton. All Rights Reserved. Lake Superior Proven Field Outfitters.</p><div class="flex gap-space-lg"><a class="hover:text-canvas-paper transition-colors" href="#">Terms of Service</a><a class="hover:text-canvas-paper transition-colors" href="#">Privacy Policy</a><a class="hover:text-canvas-paper transition-colors" href="#">In-Store Pickup Policy</a></div></div></div></footer><script defer src="site.js"></script>
+</body></html>

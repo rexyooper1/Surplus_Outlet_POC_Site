@@ -1,0 +1,179 @@
+/* Shared styles for Surplus Outlet prototype pages.
+   Plain CSS (not Tailwind) so it works alongside the Tailwind CDN build. */
+
+:root {
+  --so-header-h: 144px;
+  --so-primary: #032517;
+  --so-primary-container: #1b3b2b;
+  --so-pine-deep: #0E2419;
+  --so-canvas: #FAF8F5;
+  --so-surface-high: #eae8e3;
+  --so-on-surface: #1b1c19;
+  --so-on-surface-variant: #424843;
+  --so-gold: #ffb957;
+  --so-gold-deep: #A86F1E;
+}
+
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: calc(var(--so-header-h) + 16px); }
+
+/* Fade used by the brands filter */
+@keyframes so-fade-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.animate-fadeIn, .animate-fade-in { animation: so-fade-in 0.3s ease-out; }
+
+/* ---------- "Take It Outside" tagline lockup (beside the logo badge) ---------- */
+.so-tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  border-left: 3px solid var(--so-gold-deep);
+  font-family: Outfit, sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--so-primary);
+}
+.so-tagline__accent { color: var(--so-gold-deep); }
+
+@media (max-width: 1023px) {
+  .so-tagline { font-size: 20px; padding-left: 0.75rem; }
+}
+/* Narrow phones: drop the placeholder account icon so the tagline has room */
+@media (max-width: 419px) {
+  header .h-20 > div:last-child > .rounded-full { display: none; }
+}
+@media (max-width: 359px) {
+  .so-tagline { font-size: 17px; padding-left: 0.6rem; }
+}
+
+/* ---------- Mobile navigation ---------- */
+.so-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 0.25rem;
+  background: var(--so-surface-high);
+  color: var(--so-primary);
+  cursor: pointer;
+}
+.so-menu-toggle:hover { background: #e4e2dd; }
+.so-menu-toggle:focus-visible { outline: 2px solid var(--so-primary); outline-offset: 2px; }
+
+@media (max-width: 1023px) {
+  .so-menu-toggle { display: inline-flex; flex-shrink: 0; }
+
+  /* Let the logo/wordmark shrink so the menu button always fits */
+  header .h-20 > a:first-child { min-width: 0; flex-shrink: 1; }
+
+  /* Match main's top padding to the (shorter) mobile header. */
+  body.so-js main { padding-top: var(--so-header-h) !important; }
+
+  body.so-js .so-nav-row { display: none; }
+  body.so-js header.so-nav-open .so-nav-row {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1.25rem 1rem;
+    background: var(--so-canvas);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    border-top: 1px solid #E2DDD5;
+  }
+  body.so-js header.so-nav-open #primary-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    overflow: visible;
+  }
+  body.so-js header.so-nav-open #primary-nav a {
+    padding: 0.75rem 0.75rem;
+    font-size: 16px;
+  }
+}
+
+/* Dim page behind the open mobile menu */
+.so-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(22, 27, 30, 0.35);
+}
+
+/* ---------- Confirmation modal ---------- */
+.so-modal {
+  border: 0;
+  padding: 0;
+  border-radius: 0.5rem;
+  width: min(440px, calc(100vw - 2.5rem));
+  background: var(--so-canvas);
+  color: var(--so-on-surface);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+}
+.so-modal::backdrop { background: rgba(22, 27, 30, 0.6); backdrop-filter: blur(2px); }
+.so-modal[open] { animation: so-fade-in 0.2s ease-out; }
+.so-modal__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding: 2rem 1.75rem 1.75rem;
+}
+.so-modal__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  background: var(--so-primary-container);
+  color: #fff;
+}
+.so-modal__icon .material-symbols-outlined { font-size: 28px; }
+.so-modal__title {
+  margin: 0.25rem 0 0;
+  font-family: Outfit, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--so-primary);
+}
+.so-modal__text {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--so-on-surface-variant);
+}
+.so-modal__btn {
+  margin-top: 0.75rem;
+  padding: 0.75rem 2rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background: var(--so-primary);
+  color: #fff;
+  font-family: Outfit, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.so-modal__btn:hover { background: var(--so-pine-deep); }
+.so-modal__btn:focus-visible { outline: 2px solid var(--so-gold); outline-offset: 2px; }
+
+/* Inline error under the footer email field */
+.so-field-error {
+  margin: 0;
+  font-size: 12px;
+  color: #ffb4ab;
+}

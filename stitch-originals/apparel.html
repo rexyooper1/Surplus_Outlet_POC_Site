@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#41484c", "primary": "#032517", "on-surface-variant": "#424843", "surface-bright": "#fbf9f4", "surface-container": "#f0eee9", "border-subtle": "#E2DDD5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#2a1800", "surface-container-high": "#eae8e3", "secondary-container": "#dbe0e6", "primary-container": "#1b3b2b", "on-secondary-fixed": "#161c20", "inverse-primary": "#abcfb8", "on-tertiary-fixed-variant": "#643f00", "primary-fixed": "#c7ebd4", "on-primary": "#ffffff", "outline": "#727973", "slate-surface": "#161B1E", "inverse-surface": "#30312e", "surface-container-low": "#f5f3ee", "tertiary": "#301c00", "on-secondary": "#ffffff", "surface": "#fbf9f4", "secondary-fixed-dim": "#c1c7cc", "surface-container-highest": "#e4e2dd", "on-surface": "#1b1c19", "surface-variant": "#e4e2dd", "timber-bark": "#5C4328", "trail-gold-hover": "#A86F1E", "tertiary-fixed": "#ffddb5", "canvas-paper": "#FAF8F5", "surface-dim": "#dbdad5", "on-error": "#ffffff", "on-error-container": "#93000a", "background": "#fbf9f4", "on-tertiary": "#ffffff", "tertiary-container": "#4c2f00", "error-container": "#ffdad6", "inverse-on-surface": "#f2f1ec", "outline-variant": "#c1c8c2", "on-primary-container": "#83a590", "on-background": "#1b1c19", "on-tertiary-container": "#d19133", "error": "#ba1a1a", "primary-fixed-dim": "#abcfb8", "on-primary-fixed-variant": "#2d4d3c", "tertiary-fixed-dim": "#ffb957", "secondary-fixed": "#dee3e8", "keweenaw-ice-blue": "#B9D2DF", "pine-deep": "#0E2419", "secondary": "#595f64", "surface-tint": "#456553", "on-primary-fixed": "#002113", "on-secondary-container": "#5d6368" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin": "2.5rem", "margin-mobile": "1.25rem", "space-2xl": "4rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem" }, "fontFamily": { "body-sm": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-lg": [ "Outfit" ], "headline-md": [ "Outfit" ], "label-lg": [ "Outfit" ], "display-lg-mobile": [ "Outfit" ], "headline-lg-mobile": [ "Outfit" ], "body-md": [ "Plus Jakarta Sans" ], "label-md": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Outfit" ], "headline-lg": [ "Outfit" ], "headline-sm": [ "Outfit" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "display-lg": [ "48px", { "lineHeight": "56px", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "display-lg-mobile": [ "34px", { "lineHeight": "42px", "fontWeight": "700" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-canvas-paper/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-1 px-margin-mobile md:px-margin text-label-sm font-label-sm tracking-wider uppercase flex justify-between items-center"><div class="flex items-center gap-space-sm"><span>Keweenaw Peninsula Outfitter • Houghton, Michigan</span></div><div class="flex items-center gap-space-lg"><a class="hover:text-primary-fixed transition-colors" href="tel:19064822550">Call Us: 1 (906) 482 - 2550</a><span class="hidden md:inline-block text-outline-variant">|</span><span class="hidden md:flex items-center gap-space-xs text-on-tertiary-container"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim inline-block animate-pulse"></span>Open Today 9am - 8pm</span></div></div><div class="h-20 w-full px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Surplus Outlet Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrC5Zz_7YcehaKOxddMLZKTlJTrmlnBY1W03fPoDMaRC0CT3FaFhblUpYltKYttpieKBfz1q5ZQHkoKja2JbkuxP0AiHZrVcDQFuE6xjqX_uhDEe6FXwPd5MyKbnyf86wsRjg2DvL1d1uW6khjkxkrqQy6hVxE1nCxH7JEXOJcdTea6AiO3odBlWoXc_myZbdRvq55nEVzat5jQlnTPxjq8GiHm7HbIx2VtXvHF52xQ"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none uppercase">Surplus Outlet</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Outdoor Outfitters</span></div></div><div class="hidden lg:flex items-center flex-1 max-w-md mx-space-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary shadow-[0_1px_4px_rgba(0,0,0,0.04)]" placeholder="Search rugged apparel, footwear, outdoor gear..." type="search"/></div></div><div class="flex items-center gap-space-md shrink-0"><a class="hidden xl:flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-primary text-[18px]">store</span><span class="font-label-md text-label-md">Houghton Store</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full px-margin-mobile md:px-margin pb-3"><nav class="flex items-center gap-space-lg overflow-x-auto whitespace-nowrap" data-active-classes="bg-primary-container text-on-primary font-headline-sm rounded-lg"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-3" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-3" data-path="brands" href="#">Brands We Carry</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-3" data-path="apparel-footwear" href="#">Apparel &amp; Footwear</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-3" data-path="outdoor-gear" href="#">Outdoor Gear</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-3" data-path="about" href="#">About Us</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-3" data-path="contact" href="#">Contact &amp; Hours</a></nav></div></header><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<!-- Atmospheric Hero / Field Header -->
+<section class="relative w-full bg-slate-surface text-canvas-paper px-margin-mobile md:px-margin pt-space-xl pb-space-2xl overflow-hidden">
+<!-- Subtle Topographic Ambient Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#FAF8F5_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="absolute -right-24 -bottom-24 w-96 h-96 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm bg-primary/40 px-3 py-1 rounded-full text-keweenaw-ice-blue">
+<span class="w-2 h-2 rounded-full bg-trail-gold-hover animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Keweenaw Peninsula Field Testing • Winter 2025</span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary-fixed-dim font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-trail-gold-hover text-[16px]">thermostat</span>
+<span>Lake Superior Shoreline Spec: Sub-Zero Rated</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-display-lg text-display-lg text-canvas-paper tracking-tight uppercase leading-none">
+            Apparel &amp; Footwear <br/><span class="text-keweenaw-ice-blue">for the Northwoods</span>
+</h1>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim max-w-2xl leading-relaxed mt-space-xs">
+            Engineered for 200+ inches of Keweenaw snow, wet Lake Superior winds, and rigorous Copper Country jobs. From timber stands to technical winter ascents.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm bg-pine-deep/90 p-space-md rounded-xl backdrop-blur-sm shadow-xl">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-canvas-paper uppercase">In-Store Fitting Desk</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Real sizing with heavyweight wool boot socks &amp; layered thermal checks.</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs text-label-sm font-label-sm">
+<span class="text-trail-gold-hover uppercase tracking-wider">Store Status</span>
+<span class="text-canvas-paper font-semibold">Ready for Walk-Ins &amp; Call Orders</span>
+</div>
+</div>
+</div>
+<!-- Quick Department Category Filters -->
+<div class="pt-space-md flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-widest">Select Rig Category</span>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-2 scrollbar-none" id="categoryFilterBar">
+<button class="filter-pill bg-canvas-paper text-primary font-label-md text-label-md px-4 py-2 rounded-full uppercase tracking-wider shrink-0 transition-all hover:bg-surface-bright" data-filter="all">All Gear (24)</button>
+<button class="filter-pill bg-slate-surface text-secondary-fixed-dim font-label-md text-label-md px-4 py-2 rounded-full uppercase tracking-wider shrink-0 transition-all hover:bg-primary-container hover:text-canvas-paper" data-filter="mens">Men's Outerwear</button>
+<button class="filter-pill bg-slate-surface text-secondary-fixed-dim font-label-md text-label-md px-4 py-2 rounded-full uppercase tracking-wider shrink-0 transition-all hover:bg-primary-container hover:text-canvas-paper" data-filter="womens">Women's Outerwear</button>
+<button class="filter-pill bg-slate-surface text-secondary-fixed-dim font-label-md text-label-md px-4 py-2 rounded-full uppercase tracking-wider shrink-0 transition-all hover:bg-primary-container hover:text-canvas-paper" data-filter="thermal">Thermal Base Layers</button>
+<button class="filter-pill bg-slate-surface text-secondary-fixed-dim font-label-md text-label-md px-4 py-2 rounded-full uppercase tracking-wider shrink-0 transition-all hover:bg-primary-container hover:text-canvas-paper" data-filter="workwear">Heavy Workwear</button>
+<button class="filter-pill bg-slate-surface text-secondary-fixed-dim font-label-md text-label-md px-4 py-2 rounded-full uppercase tracking-wider shrink-0 transition-all hover:bg-primary-container hover:text-canvas-paper" data-filter="boots">Winter Boots</button>
+<button class="filter-pill bg-slate-surface text-secondary-fixed-dim font-label-md text-label-md px-4 py-2 rounded-full uppercase tracking-wider shrink-0 transition-all hover:bg-primary-container hover:text-canvas-paper" data-filter="trail">Trail &amp; Hiking</button>
+<button class="filter-pill bg-slate-surface text-secondary-fixed-dim font-label-md text-label-md px-4 py-2 rounded-full uppercase tracking-wider shrink-0 transition-all hover:bg-primary-container hover:text-canvas-paper" data-filter="accessories">Socks &amp; Accessories</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Spec Metrics / Outfitter Advantage Banner -->
+<section class="w-full bg-surface-container-high py-4 px-margin-mobile md:px-margin">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-space-md text-on-surface">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">ac_unit</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-primary leading-tight">-40°F Tested</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Severe Copper Country spec</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">water_drop</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-primary leading-tight">100% Lake Proof</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gore-Tex &amp; Vulcanized Seals</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">handshake</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-primary leading-tight">Darn Tough Life</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Unconditional guarantee</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">local_shipping</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-primary leading-tight">Store Pickup Ready</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Curbside on M-26 in Houghton</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Utility & Master Catalog Section -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- Catalog Controls & Local Stock Toggles -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-lg text-label-lg uppercase tracking-wide text-primary">Department Inventory:</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest text-primary rounded-lg font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            Houghton Warehouse Live
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest text-on-surface-variant rounded-lg font-label-sm text-label-sm">
+            Updated: 42 Min Ago
+          </span>
+</div>
+<div class="flex items-center gap-space-md w-full md:w-auto justify-between md:justify-end">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span>Sort By:</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-3 py-1.5 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer">
+<option>Hardiest / Winter Rated</option>
+<option>Staff Picks (Keweenaw Trials)</option>
+<option>Price: Low to High</option>
+<option>Brand A-Z</option>
+</select>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-timber-bark transition-colors uppercase" id="resetFiltersBtn">Reset</button>
+</div>
+</div>
+<!-- SECTION 1: Heavy Winter Parkas & Arctic Shells -->
+<div class="product-group flex flex-col gap-space-lg" data-category-group="mens womens outerwear">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs text-trail-gold-hover font-label-sm text-label-sm uppercase tracking-widest">
+<span>Section 01</span>
+<span>•</span>
+<span>Sub-Zero Protection</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">Heavy Winter Parkas &amp; Arctic Shells</h2>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Tested against Lake Superior gale squalls and Keweenaw ridge freezes</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1: McMurdo -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Rugged winter parka The North Face McMurdo in deep asphalt grey against snow-covered northern pine trees in Houghton Michigan winter, dramatic cinematic lighting, tactical apparel aesthetic, clean catalog presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzzA9AYgaPsQ8cQl9LoXVBT-09P8VNpULZ4rXskj_zOfv8wN6KqS6I_awXOvIQgddTaAobCz6THRH6J1ikDM6W-V40bDy12nSz0nGLWTydWqIiwp9tRUgMMlm_TdE82HB1F4fmf1uAaeLiE8DOPndu4mP897M6vGv5o6fXuHYP86-RgWSU3EOoQ1gvCj-3kw9KyaOPMaE6sd0D20p3Nhd_90EMMKbWpncwxo2k90w"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">600-Fill Recycled Down</span>
+<span class="bg-timber-bark text-canvas-paper font-label-sm text-label-sm uppercase px-2 py-0.5 rounded-sm">DryVent™ 2L</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>In Stock Houghton</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">The North Face</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">McMurdo Expedition Down Parka</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Engineered with an internal draft collar, faux-fur trim hood, and waterproof, windproof breathable DryVent™ shell for extreme cold conditions.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$400.00</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Columbia Whirlibird -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Columbia Whirlibird IV Interchange technical winter ski and alpine jacket in deep forest green and pine tones, studio catalog style with rugged outdoor gear aesthetic, subtle frost texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqgYcmBukiNuI30h22LFxo6d2GKAvVLIAQ3ciYElgtq-2loDrDcPPxzcke6tmuCFOuQiVh1YpSfTFaWd8T9lXupln4K7HBJirPXv9GSoZeC_8wP0PrBH3iUqyBVUb_iOOTovEMQmxn2KPxw-g1gfq9WIkT1VE5shyBaPC52N1M6UEknwKFl-FXBNB6pfo9p3d1MLrMLq0jVfVTZ9ciB2j6YW2aO37Er-paP490X78"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">3-in-1 Interchange</span>
+<span class="bg-keweenaw-ice-blue text-primary font-label-sm text-label-sm uppercase px-2 py-0.5 rounded-sm font-bold">Omni-Heat™</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>In Stock Houghton</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Columbia Sportswear</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Whirlibird IV Interchange Jacket</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Adaptable shell plus heat-reflective insulated liner. Ideal for Mount Bohemia powder days, snowshoeing ridges, or variable Copper Country wet precipitation.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$230.00</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Carhartt Yukon Extremes -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Carhartt Yukon Extremes insulated heavy duty black arctic jacket for severe winter work, tough Cordura fabric finish, industrial aesthetic, Upper Peninsula Michigan worksite lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFeRB_HFATKCgC4VWxVB4us4mdOBpCv2dLNSGc5Js0HBpzNquYGGCawCxnREa744M2ChUXy43ctR1kpG_BQSEAY7MNF4_DEqzJGOSnyyOylEx_0NkqOJojheSG7j4bVuQ5rvux58mLCZkfnNhiVVyRMhgt3KEBoTGckGGNwi1RJwVBi024jaJDIY29o_Ciiv8Y6GMM57wY_u0ah4Hn_X00VQPlc3t4YtdoensbAFo"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-timber-bark text-canvas-paper font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">500D Cordura® Shell</span>
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2 py-0.5 rounded-sm">150g 3M Thinsulate™</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>In Stock Houghton</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Carhartt Arctic</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Yukon Extremes Wind Fighter Parka</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  The ultimate cold-weather work shield. Wind Fighter technology repels high winds while Cordura reinforcements handle brush, metal sheets, and sub-zero timber chores.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$279.99</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Workwear & Chore Gear -->
+<div class="product-group flex flex-col gap-space-lg" data-category-group="workwear mens">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs text-trail-gold-hover font-label-sm text-label-sm uppercase tracking-widest">
+<span>Section 02</span>
+<span>•</span>
+<span>Copper Country Built</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">Workwear &amp; Heavy Chore Gear</h2>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Canvas weaves, triple-stitched seams, and reinforced knees for rugged trade work</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 4: Carhartt Duck Bib -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Classic Carhartt brown heavy cotton duck bib overalls with brass hardware and quilted flannel lining laid out on vintage reclaimed wood background in a rustic outfitter store" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoLyOGH_LfVoluOaeUSrQvWB_4zEnCJ5VCfFZQJobGtHvnD0sq0FCzyHFybSSQsd7CKe66Yf61G7OR6CrZFGpAqTEYFo4dRTPId0ZleLMnRXAgF78jsYYAqBV1yg7iElTao7491xgCrxPutypgQBZdFrG4VZfLKE0hr0q1i_i5by7lewTX2u7tTPwlGA4Ohfy543-PfYIQSU5odDx8OziIrIULJ8e30CY-5HxJtDE"/>
+<div class="absolute top-3 left-3">
+<span class="bg-timber-bark text-canvas-paper font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">Firm Duck Cotton</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>All Inseams In Stock</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Carhartt Workwear</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Quilt-Lined Duck Bib Overalls</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Heavyweight 12-ounce cotton duck with red quilted nylon lining. Ankle-to-thigh leg zippers with protective wind flaps for easy boot dressing.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$119.99</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Heavy Flannel Shirt Jacket -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Rugged Buffalo plaid quilted flannel shirt jacket in deep red and forest black with snap buttons and fleece insulated collar, outdoors timber landscape in Upper Peninsula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP0h1RkiyY4yh_Yko17m6V_PW_6yfGmKFqLbF9-7icyflHVHO8qdKnTnqCkYRWjezkpeKcnIp_KOrtt2x066_61-rnc_zoWf9Fa1eDItHlufhrdZtfBk-cYXU4ZmHlPQsuNfetFuwZZFjK7Pj82EqQm4dDdku1Tk5zpB5IOiTCaUDu80f6CPvDOjgzQ13XPRAmop2gpAjowC7NxJeGdVWIamfPOK2SIfG2Z9Hrgnk"/>
+<div class="absolute top-3 left-3">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">Sherpa &amp; Quilt Lined</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>In Stock Houghton</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Northwoods Heritage</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Ironwood Heavyweight Quilted Flannel</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Heavy 10-ounce brushed yarn flannel exterior fortified with a quilted insulated torso and smooth taffeta sleeve lining for effortless layering.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$74.50</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6: Dungarees -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Double front washed duck dungarees work pants in gravel moss tone with utility tool pockets and hammer loop, durable outdoor field work atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAqk-JO8sT05FFrNH7uQKTLyj1mh9zmOvs2BlK0hUTalE5lDgP6KAgGM64E9uVWndXTG9tEegnDwgU3jxRsBfiWBRLMF3GhPht-15cMHjCz0Qdr-FUTJXfEU8jWjIaQhmpbfqHWW6wqZRifPGNBOppA3hHBSbiDPa0JfTvtGVs7eIlIv5REXGYLIx8RklZ0p6NhzzqxYaziCd4oldqE-tlD9o2aZie5XeTVFyfuI"/>
+<div class="absolute top-3 left-3">
+<span class="bg-primary-container text-canvas-paper font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">Double-Front Knee</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>In Stock Houghton</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Carhartt Workwear</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Washed Duck Double-Front Dungaree</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Built with chap-style double front legs accommodating knee pad inserts. Cleanouts let debris escape easily during timber or construction work.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$64.99</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Waterproof Footwear & Winter Boots -->
+<div class="product-group flex flex-col gap-space-lg" data-category-group="boots trail">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs text-trail-gold-hover font-label-sm text-label-sm uppercase tracking-widest">
+<span>Section 03</span>
+<span>•</span>
+<span>Traction &amp; Thermal Sole</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">Waterproof Footwear &amp; Sub-Zero Boots</h2>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Lug depths designed for slush, iced rocks, and knee-deep powdery trails</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 7: Muck Arctic Sport -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Muck Boot Arctic Sport high waterproof winter neoprene and rubber boot on snow and ice backdrop, high contrast technical details, Keweenaw winter trail setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXvVFYXpi_9l-sw7QE2g2txeZ10_REZme6RNsJO8bkmdNRTuBg4usje2FR6ARQZHX6bkJfIzS8x3ZUMtQNMD3dUL1HmoAlXg56gGRgOYgCcBTUjSm9VqdrtZ2vwLMvHZOg4s3Gba11EFUyXqPzAmOmS3bl77Pn3FIENN_c5W4GqwI_akhn8jih0yDUtDM7Eo5SmMWiMin3jeJV7k-kEq60h4GggEwx55iRZgUImdg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">Rated to -40°F</span>
+<span class="bg-timber-bark text-canvas-paper font-label-sm text-label-sm uppercase px-2 py-0.5 rounded-sm">5mm CR Flex-Foam</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Sizes 7 - 14 Live</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Muck Boot Company</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Arctic Sport Tall Extreme-Condition Boots</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  The benchmark boot for ice fishing on Portage Lake and heavy shoveling. Fleece lining, 2mm thermal foam underbed, and rugged cast-molded outsoles.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$185.00</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 8: Keen Targhee IV -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="KEEN Targhee IV Waterproof mid hiking boot with rugged leather and Keen.Dry membrane, placed on copper rock and granite stones from Michigan Keweenaw outcroppings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBax8hKqubHx7vZemxnwzOaOueWo3KoVyBDp4o5G77ak_r7XzGiJMHEs_ZzxA0MAf4QEMZL2iDTQRBwb8dOR6SQkSw67PczdFyBPqB4BzZQHXEKT3Bs-hck8VbuwuHXvRZYm9KR4z6TrdvEd0hX_nCvazjB_VD7H-pvBh1Z_-DgBhEMeLdOHwuAUqDvkIPbJO_nxQlGBZs_do9c9o0WzaapnYyYSRkUtCWfHaluyT4"/>
+<div class="absolute top-3 left-3">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">KEEN.FUSION Soling</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Men &amp; Women Fits</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">KEEN Footwear</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Targhee IV Mid Waterproof Hiker</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Glue-free mechanical bond construction that won't delaminate in freeze-thaw cycles. Premium nubuck leather and multi-directional 4mm lugs.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$169.95</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 9: Keen Utility Steel Toe -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="KEEN Utility Pittsburgh steel toe heavy duty workboot with waterproof membrane and oil resistant rubber tread, heavy industrial workshop scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPnGBIayizDYX31rXIIJXH59xvYc8MbWxuXvPPUobJ9w68HRCwSP262m0QTKUUTqEUwilsqiLldum0ZB0Wmosx9gieYgVJJIp1kRrGsw2ReGEAtXapJ49SjptmDL2YkNR8sSXmw3IVrtdEIdRSiDmET6-_NziyZb0zeiP2e45j56aL-gMBMjnmhWZBJjyrkGOgVJiCMvE1t6B3Y8UCG02ZbgSDscQnFXktZgyHm4Y"/>
+<div class="absolute top-3 left-3">
+<span class="bg-trail-gold-hover text-on-surface font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider font-bold">Steel Toe ASTM F2413</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>In Stock Houghton</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">KEEN Utility</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Pittsburgh Steel Toe 6" Waterproof</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Asymmetrical steel toes, torsional stability plate, and locking metal eyelets. Trusted by local mechanics, loggers, and MTU engineering crews.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$195.00</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Sub-Zero Headwear, Gloves & Accessories -->
+<div class="product-group flex flex-col gap-space-lg" data-category-group="accessories">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs text-trail-gold-hover font-label-sm text-label-sm uppercase tracking-widest">
+<span>Section 04</span>
+<span>•</span>
+<span>Upper Peninsula Heritage</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">Sub-Zero Winter Accessories &amp; Headwear</h2>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">The legendary earband wool cap and extreme climate extremity protection</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 10: Stormy Kromer Cap -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Original Stormy Kromer wool cap in classic plaid pattern with pull-down earband, authentic Upper Peninsula Michigan craftsmanship, studio wood plank lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIMnzccbpyXqvg_qSrxXgytWpWuyyYIbDRpP7x_vlyJFEeuIAeqWJI036A8jnqgP-zPteObi4bqpYc1Sg6jwzC07CydyCPJ2mT9LENH8YIKTbmuHG2wlLk_ug8t-9EbG7EeBnAfu_pELv8i_s6rZvGHaUErTyYEi2RHFcqJYl0NzyfSv5j-sEZp9hhswoB-XkKDxuKKiDvLo65ExAky7hm8-wLZTclZLypZgcGB8M"/>
+<div class="absolute top-3 left-3">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">Handcrafted in Ironwood, MI</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Full Size Wall In Stock</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Stormy Kromer</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">The Original Stormy Kromer Wool Cap</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Six-panel hand-stitched wool blend with the patented slide-down earband that won't slip in high Superior winds. An iconic Keweenaw staple since 1903.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$49.99</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 11: Carhartt Knit Beanie -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Carhartt ribbed acrylic knit cuff beanie in dark hunter green and carhartt brown with front sewn label, clean high quality catalog photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUR9Im3BkkvfTxsZkA3oSJGufZSrNTw9CMu0624rfrLAs5K_0XsL3f3zwdR7l2cRe0z8-U6VKKeNfs0iWyhK4W0Kc4_duL4IQrkcBd635c4oqRIRa1LDm2GyBNuVeePIjlB9scWIRMlvYwWXJio2p7LDGQhij0ZNOVjJbYFMJgEQjR7B3_MdUcCG99Y3FtituzWpW_vVlWkDCBSg7pcM4Vopxgixd1ZFQzG5E7TpA"/>
+<div class="absolute top-3 left-3">
+<span class="bg-slate-surface text-canvas-paper font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">100% Acrylic Rib Knit</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>18 Colors Available</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Carhartt Essentials</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">A18 Acrylic Watch Hat Beanie</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Stretchy rib knit that retains shape and blocks biting drafts. A versatile everyday cold-weather favorite from the MTU campus to the lumber yard.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$19.99</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 12: Gore-Tex Glittens -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Convertible Gore-Tex windproof glittens mittens with magnetic fold back finger flap and textured goat leather palm, cold winter mountain snow photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6D8wN3uGzRiFfsjbABQCBiWNYIKTC-vjpk3U3-temVCrq2HYjY04qPuyBMJm0TRp3WgSeyqrZ2pr3-QY_yBGbaDCYvl6H0uO5gRc8-M8E4JSKlu-FFdoaow270COAkm4DVsJttz5bQ6ikmZofZMhZKQN-yfFgILS67TIj3V_t5rDV8uzzYhavW2R-x4--TVy7f2qw5q6_x-vrePlpsXAyhD8S7XaSCFp4XcvbrqM"/>
+<div class="absolute top-3 left-3">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">Windstopper® + PrimaLoft</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>In Stock Houghton</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Outdoor Technical</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Gore-Tex Infinium Convertible Glittens</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  The warmth of an insulated mitten with instantaneous fold-over finger dexterity for phone use, rifle trigger checks, or snowmobile carb adjustments.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$58.00</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 5: Thermal Base Layers & Woolens -->
+<div class="product-group flex flex-col gap-space-lg" data-category-group="thermal accessories">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs text-trail-gold-hover font-label-sm text-label-sm uppercase tracking-widest">
+<span>Section 05</span>
+<span>•</span>
+<span>Thermoregulation Foundation</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">Thermal Base Layers &amp; Vermont Woolens</h2>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Pure Merino fibers for moisture evacuation and odor-resistant endurance</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 13: Smartwool Crew -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Smartwool Classic Thermal Merino 250 crew long sleeve thermal base layer top in deep slate pine, detailed fabric knit texture close up with clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsdtQ5hKBmtg4gTjPpsFzzB5uXo6rTDs9LrRr_iDwu7jpbzxr9jws9plEQAMGgxMAn4sDP5btbGu82ZWtXamauYRFJ9BYFoOi7zFHhyzeGJxz53k_aIaUWSZtn4URwZTJ9huC2jv7HEAvOWBE0BqBdHN0byACRXexl2rMuW2nx8D7nSZ-B1tYqzKe_MdLVy59IVdO19-msKpH5tSAUn7Z6CHTK9HFE6niTgoCmhbQ"/>
+<div class="absolute top-3 left-3">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">100% Merino 250 g/m²</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Unisex Sizing</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Smartwool</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Classic Thermal Merino 250 Crew</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Interlock knit construction with flatlock seam detailing minimizes chafing. Regulates core temperature even during high-output cross-country touring.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$115.00</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 14: Darn Tough Hiker -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Darn Tough Hiker Boot full cushion merino wool socks in forest green and slate grey placed alongside leather hiking boots on rustic wood floor, outfitter aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCII5da_G169_EeNPlgH6_JCNft5qnYYYzHSOgd3pOJxcckBhanIEIXngvpbX-LhGh4qlR-ri8EtJ60S7N7mjS8Oe8v8EhXYPWptQcr9gvhbXUGQ9VF8xIBlL8gphpsS0CTruZa3nTpiBw6f_A-8KlI6K2eJflKXbhp5OKHDw-zpZJ3KUSa66DGSooU5GPnmoKj4xWNklwrfGn88qqq4ynNem4XcU6COAF0-LDmUis"/>
+<div class="absolute top-3 left-3">
+<span class="bg-timber-bark text-canvas-paper font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider font-bold">Unconditional Lifetime Guarantee</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Massive In-Store Wall</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Darn Tough Vermont</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Hiker Boot Full Cushion Sock</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  High-density knit with reinforced heel and footbed cushioning that won't bunch or slip. Made in Vermont, proven on Porcupine Mountains winter treks.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$27.00</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 15: Smartwool Bottoms -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Merino wool thermal long underwear base layer leggings on minimalist studio backdrop, high technical fabric weave detail in charcoal grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1dhLtFqo9-JR9Li7OVMlW5ZqHGWFOBhM0Cg3uQpkX53_MKBeUAXp9XoJhwL-Wbcji2cZr3rb_tOrUTr3M_XJ1fFBKKaUPM3WsU3gVIGm7w5ZyaQwV9vkUz1RMbu5A3yBKCG0dbcjtnaEhcGGpEVASIjevq6_P-cRHtr-rvtQRPJt6EMvH887_ffUD32C05eKZ7FGqeHETqfArBSr8ldO5xzwGrI1K-7B9fSJuOOs"/>
+<div class="absolute top-3 left-3">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-sm tracking-wider">Midweight 250 Merino</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/95 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>In Stock Houghton</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Smartwool</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Classic Thermal Merino 250 Bottoms</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Merino-covered elastic waistband and flatlock anti-chafing seams. Fits perfectly underneath bibs or snow pants for all-day warmth without bulk.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">MSRP In-Store</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$115.00</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-pine-deep transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Outfitter Fit Guide & Store Service Desk -->
+<section class="w-full bg-slate-surface text-canvas-paper px-margin-mobile md:px-margin py-space-2xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Fitting Philosophy & Interactive Sizing Wizard -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-keweenaw-ice-blue font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[18px]">straighten</span>
+<span>Houghton Outfitter Service</span>
+</div>
+<h2 class="font-display-lg text-display-lg uppercase tracking-tight text-canvas-paper leading-tight">
+            Boot &amp; Layer Fitting <br/><span class="text-trail-gold-hover">in Houghton</span>
+</h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim leading-relaxed">
+            Online charts fail when the mercury drops past zero. Visit our Houghton showroom for custom boot sizing, winter boot sock matching, and layered outer shell testing before tackling Mount Bohemia glades or Porcupine Mountains backcountry trails.
+          </p>
+<!-- Interactive Fit Step Card -->
+<div class="bg-pine-deep p-space-lg rounded-xl flex flex-col gap-space-md mt-space-sm shadow-xl">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-canvas-paper">Interactive Sizing Checklist</span>
+<span class="font-label-sm text-label-sm bg-primary/60 px-2.5 py-1 rounded text-keweenaw-ice-blue">3 Steps in Store</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
+<div class="flex flex-col gap-1 bg-slate-surface/60 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-trail-gold-hover font-bold">01. Sock Calibrate</span>
+<span class="font-body-sm text-body-sm text-canvas-paper">We measure with Darn Tough full-cushion wool weights to ensure toe blood flow.</span>
+</div>
+<div class="flex flex-col gap-1 bg-slate-surface/60 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-trail-gold-hover font-bold">02. Ramp Incline</span>
+<span class="font-body-sm text-body-sm text-canvas-paper">Test heel lock on our 25-degree wooden incline simulator right on the sales floor.</span>
+</div>
+<div class="flex flex-col gap-1 bg-slate-surface/60 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-trail-gold-hover font-bold">03. Shell Clearance</span>
+<span class="font-body-sm text-body-sm text-canvas-paper">Ensure room for base layers without pinching forearm circulation or trapping perspiration.</span>
+</div>
+</div>
+<!-- Interactive selector tool -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-keweenaw-ice-blue font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">snowshoeing</span>
+<span>Destination:</span>
+<select class="bg-slate-surface text-canvas-paper px-3 py-1.5 rounded font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-keweenaw-ice-blue cursor-pointer" id="destinationSelector">
+<option value="bohemia">Mount Bohemia Extreme Skiing</option>
+<option value="porkies">Porcupine Mountains Winter Camp</option>
+<option value="portage">Portage Canal Ice Fishing</option>
+<option value="campus">Michigan Tech Campus Commute</option>
+</select>
+</div>
+<div class="font-body-sm text-body-sm text-secondary-fixed-dim bg-slate-surface px-3 py-1.5 rounded" id="destinationAdvice">
+                Recommended: 3-in-1 shell + 250 Merino base + 800g insulated boot
+              </div>
+</div>
+</div>
+</div>
+<!-- Right: Store Order Ready & Call Box -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest text-on-surface p-space-xl rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Direct Desk Ready</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Houghton, MI</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-headline-md uppercase text-primary leading-tight">In-Store &amp; Phone Order Ready</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Have our team hold sizes for you before you drive down M-26. We check current shelf stock, verify insoles, and hold garments for 48 hours with zero charge.
+              </p>
+</div>
+<!-- Direct Dial Widget -->
+<a class="group flex items-center justify-between p-space-md bg-primary text-on-primary rounded-xl transition-all duration-300 hover:bg-pine-deep shadow-md" href="tel:19064822550">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-canvas-paper/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-canvas-paper text-[26px]">call</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-keweenaw-ice-blue">Direct Counter Line</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-canvas-paper font-bold">1 (906) 482 - 2550</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-keweenaw-ice-blue group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<!-- Houghton Map & Logistics Details -->
+<div class="flex flex-col gap-space-xs pt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">location_on</span>
+<span>Surplus Outlet Store • Memorial Union Corridor / M-26, Houghton MI</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">schedule</span>
+<span>Open Monday–Saturday: 9am–8pm | Sunday: 10am–5pm</span>
+</div>
+</div>
+<!-- Mini Visual Map Snippet Container -->
+<div class="w-full h-36 rounded-lg bg-surface-container-high overflow-hidden shadow-inner flex items-center justify-center relative" data-location="Houghton, Michigan" style="">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Topographic road map view of Houghton Michigan and Keweenaw waterway along M-26 showing outfitter location pin" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVuE_vP1F3hpSLAIMsIiBoir8s7YSPa8o0tuhQmpvlAgG9f4CfaKMSYo933zdu1aTYg5bCj54ENGM1SI8DY2MRMoJ4vbfbwSaOfcQso_gaNkGWUtvqrxWEuWmwJ-eTrd31dedrkB9PK9WVOxCw9lxGJ2llSELn-kNKH3I2qKCUzbzUluaAtQ48tQ5W61vOI1mzPWEf57wzL_GAS-M69OJoFYVHNkLw48cggU8_uHQ')"></div>
+<div class="relative z-10 bg-slate-surface/85 backdrop-blur-sm px-3 py-1.5 rounded-full text-canvas-paper font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-trail-gold-hover"></span>
+<span>Surplus Outlet • Houghton Counter</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client-side filter & selector script -->
+<script>
+    (function() {
+      // Category Filter Handling
+      const filterButtons = document.querySelectorAll('.filter-pill');
+      const productGroups = document.querySelectorAll('.product-group');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          // Style active state
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-canvas-paper', 'text-primary');
+            b.classList.add('bg-slate-surface', 'text-secondary-fixed-dim');
+          });
+          btn.classList.add('bg-canvas-paper', 'text-primary');
+          btn.classList.remove('bg-slate-surface', 'text-secondary-fixed-dim');
+
+          // Toggle groups
+          productGroups.forEach(group => {
+            const groupTags = group.getAttribute('data-category-group') || '';
+            if (filter === 'all' || groupTags.includes(filter)) {
+              group.classList.remove('hidden');
+            } else {
+              group.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Reset Button
+      const resetBtn = document.getElementById('resetFiltersBtn');
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          const allBtn = document.querySelector('[data-filter="all"]');
+          if (allBtn) allBtn.click();
+        });
+      }
+
+      // Fit Guide Destination Selector
+      const destinationSelect = document.getElementById('destinationSelector');
+      const adviceDisplay = document.getElementById('destinationAdvice');
+
+      const recommendations = {
+        'bohemia': 'Recommended: 3-in-1 shell + 250 Merino base + 800g insulated boot',
+        'porkies': 'Recommended: Arctic down parka + Muck boots (-40°F) + Double full-cushion wool',
+        'portage': 'Recommended: Yukon Extremes + Tall Muck Arctic + Stormy Kromer insulated cap',
+        'campus': 'Recommended: McMurdo down parka + Targhee IV waterproof hikers + Knit watch cap'
+      };
+
+      if (destinationSelect && adviceDisplay) {
+        destinationSelect.addEventListener('change', (e) => {
+          const val = e.target.value;
+          adviceDisplay.textContent = recommendations[val] || recommendations['bohemia'];
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-slate-surface text-canvas-paper pt-space-2xl pb-space-xl"><div class="w-full px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-2xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-tight uppercase text-keweenaw-ice-blue">Surplus Outlet</span></div><p class="font-body-sm text-body-sm text-secondary-fixed-dim leading-relaxed">Equipping Keweenaw explorers, U.P. backcountry hunters, hikers, and university locals since 1978 with trusted rugged apparel and reliable outdoor equipment.</p><div class="flex items-center gap-space-sm pt-space-sm"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">verified</span><span class="font-label-md text-label-md text-tertiary-fixed">Authentic Lake Superior Outfitter</span></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-canvas-paper">Houghton Location</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-secondary-fixed-dim"><span class="text-canvas-paper font-title-md text-title-md">Surplus Outlet Store</span><span>Memorial Union Corridor / M-26</span><span>Houghton, MI 49931</span><span class="pt-2 font-label-md text-label-md text-keweenaw-ice-blue">Direct: 1 (906) 482-2550</span></div><div class="pt-space-xs"><span class="font-label-sm text-label-sm text-trail-gold-hover uppercase tracking-widest block mb-1">Store Hours</span><div class="grid grid-cols-2 gap-y-1 font-body-sm text-body-sm text-secondary-fixed-dim"><span>Monday - Saturday:</span><span class="text-canvas-paper font-label-md text-label-md">9:00 AM - 8:00 PM</span><span>Sunday:</span><span class="text-canvas-paper font-label-md text-label-md">10:00 AM - 5:00 PM</span></div></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-canvas-paper">Departments &amp; Brands</span><div class="flex flex-col gap-space-xs font-label-lg text-label-lg"><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="brands" href="#">Top Brand Showcase</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="apparel-footwear" href="#">Rugged Outerwear &amp; Boots</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="outdoor-gear" href="#">Keweenaw Trail &amp; Camp Gear</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="outdoor-gear" href="#">Winter Field Equipment</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="about" href="#">Heritage &amp; Local Roots</a><a class="text-secondary-fixed-dim hover:text-keweenaw-ice-blue transition-colors" data-path="contact" href="#">Store Directions &amp; Contact</a></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-canvas-paper">Field Dispatch</span><p class="font-body-sm text-body-sm text-secondary-fixed-dim">Subscribe for seasonal gear drops, UP trail conditions, and surplus arrival notifications.</p><div class="flex flex-col gap-space-sm"><input class="w-full px-3 py-2 bg-surface-variant text-on-surface rounded-lg font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-tertiary-fixed" placeholder="Enter your email address" type="email"/><button class="w-full py-2 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-pine-deep hover:text-canvas-paper transition-all uppercase tracking-wide" type="button">Join Field Roster</button></div></div></div><div class="pt-space-lg flex flex-col md:flex-row justify-between items-center gap-space-md text-label-sm font-label-sm text-secondary-fixed-dim"><p>© 2025 Surplus Outlet Houghton. All Rights Reserved. Lake Superior Proven Field Outfitters.</p><div class="flex gap-space-lg"><a class="hover:text-canvas-paper transition-colors" href="#">Terms of Service</a><a class="hover:text-canvas-paper transition-colors" href="#">Privacy Policy</a><a class="hover:text-canvas-paper transition-colors" href="#">In-Store Pickup Policy</a></div></div></div></footer></body></html>
